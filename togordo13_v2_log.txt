@@ -1,0 +1,117 @@
+====================================================================
+  Engine 13 v2: TOGORDOELCASCAPORRATRINADORSUPERIORPLUS
+  Constructor v53 · 9 May 2026 · F_2 substrate · target sub-3000
+  v2 redesign: greedy-heavy Pre-SA, SA local-only, mini-rescue
+====================================================================
+  RNG seed: 0xCA5AFA6EEEDC5E63
+  Phase 2 base iters: 200000
+  Pressure variant: SUM
+  T_struct: RETIRED (v2: structural moves only in Pre-SA greedy)
+  Witness: COMBO_3027 audit = 3027 (PASS)
+
+[Phase 1] Pre-SA F47 cross-era greedy exhaustive...
+[F47_CROSS_ERA] === Cycle 1 ===
+[F47_CROSS_ERA] Pass 1 cumulative Δ = 0  (audit 3027 -> 3027, 1 sub-passes)
+[F47_CROSS_ERA] Pass 2 cumulative Δ = 0  (audit 3027 -> 3027, 1 sub-passes)
+[F47_CROSS_ERA] Pass 3 cumulative Δ = 0  (audit 3027 -> 3027)
+[F47_CROSS_ERA] Phase 1 total Δ = 0  (final audit = 3027, 1 cycles)
+  Phase 1 final audit = 3027  (Δ from warm = 0, 2645.8s)
+
+[Phase 2] SA-PT 5 chains cold-shifted (max iters 200000)...
+  [SA] iter=10000  global_best=3027  rescues=5  pt_swaps=4  elapsed=430.1s
+       chain 0: T=0.050  cur=3027  best=3027  acc=66/10001
+       chain 1: T=0.100  cur=3027  best=3027  acc=65/10001
+       chain 2: T=0.200  cur=3027  best=3027  acc=79/10001
+       chain 3: T=0.500  cur=3031  best=3027  acc=123/10001
+       chain 4: T=1.000  cur=3067  best=3027  acc=362/10001
+  [SA] iter=20000  global_best=3027  rescues=10  pt_swaps=8  elapsed=861.1s
+       chain 0: T=0.050  cur=3027  best=3027  acc=121/20001
+       chain 1: T=0.100  cur=3027  best=3027  acc=130/20001
+       chain 2: T=0.200  cur=3027  best=3027  acc=145/20001
+       chain 3: T=0.500  cur=3028  best=3027  acc=240/20001
+       chain 4: T=1.000  cur=3057  best=3027  acc=758/20001
+  [SA] iter=30000  global_best=3027  rescues=15  pt_swaps=9  elapsed=1301.1s
+       chain 0: T=0.050  cur=3027  best=3027  acc=149/30001
+       chain 1: T=0.100  cur=3027  best=3027  acc=184/30001
+       chain 2: T=0.200  cur=3027  best=3027  acc=197/30001
+       chain 3: T=0.500  cur=3035  best=3027  acc=405/30001
+       chain 4: T=1.000  cur=3057  best=3027  acc=1167/30001
+  [SA] iter=40000  global_best=3027  rescues=25  pt_swaps=12  elapsed=1747.1s
+       chain 0: T=0.050  cur=3027  best=3027  acc=190/40001
+       chain 1: T=0.100  cur=3027  best=3027  acc=230/40001
+       chain 2: T=0.200  cur=3027  best=3027  acc=258/40001
+       chain 3: T=0.500  cur=3030  best=3027  acc=557/40001
+       chain 4: T=1.000  cur=3058  best=3027  acc=1538/40001
+  [SA] iter=50000  global_best=3027  rescues=30  pt_swaps=14  elapsed=2183.0s
+       chain 0: T=0.050  cur=3027  best=3027  acc=246/50001
+       chain 1: T=0.100  cur=3027  best=3027  acc=301/50001
+       chain 2: T=0.200  cur=3028  best=3027  acc=321/50001
+       chain 3: T=0.500  cur=3034  best=3027  acc=728/50001
+       chain 4: T=1.000  cur=3053  best=3027  acc=1927/50001
+  [SA] iter=60000  global_best=3027  rescues=35  pt_swaps=20  elapsed=2619.8s
+       chain 0: T=0.050  cur=3027  best=3027  acc=294/60001
+       chain 1: T=0.100  cur=3027  best=3027  acc=366/60001
+       chain 2: T=0.200  cur=3027  best=3027  acc=390/60001
+       chain 3: T=0.500  cur=3036  best=3027  acc=890/60001
+       chain 4: T=1.000  cur=3075  best=3027  acc=2401/60001
+  [SA] iter=70000  global_best=3027  rescues=40  pt_swaps=24  elapsed=3059.1s
+       chain 0: T=0.050  cur=3027  best=3027  acc=346/70001
+       chain 1: T=0.100  cur=3027  best=3027  acc=414/70001
+       chain 2: T=0.200  cur=3028  best=3027  acc=455/70001
+       chain 3: T=0.500  cur=3035  best=3027  acc=1067/70001
+       chain 4: T=1.000  cur=3068  best=3027  acc=2888/70001
+  [SA] iter=80000  global_best=3027  rescues=50  pt_swaps=26  elapsed=3506.6s
+       chain 0: T=0.050  cur=3027  best=3027  acc=397/80001
+       chain 1: T=0.100  cur=3027  best=3027  acc=457/80001
+       chain 2: T=0.200  cur=3028  best=3027  acc=528/80001
+       chain 3: T=0.500  cur=3035  best=3027  acc=1247/80001
+       chain 4: T=1.000  cur=3052  best=3027  acc=3378/80001
+  [SA] iter=90000  global_best=3027  rescues=55  pt_swaps=28  elapsed=3943.0s
+       chain 0: T=0.050  cur=3027  best=3027  acc=466/90001
+       chain 1: T=0.100  cur=3027  best=3027  acc=509/90001
+       chain 2: T=0.200  cur=3028  best=3027  acc=602/90001
+       chain 3: T=0.500  cur=3033  best=3027  acc=1426/90001
+       chain 4: T=1.000  cur=3053  best=3027  acc=3840/90001
+  [SA] iter=100000  global_best=3027  rescues=60  pt_swaps=29  elapsed=4378.0s
+       chain 0: T=0.050  cur=3027  best=3027  acc=530/100001
+       chain 1: T=0.100  cur=3027  best=3027  acc=576/100001
+       chain 2: T=0.200  cur=3027  best=3027  acc=662/100001
+       chain 3: T=0.500  cur=3035  best=3027  acc=1636/100001
+       chain 4: T=1.000  cur=3049  best=3027  acc=4213/100001
+  [SA] iter=110000  global_best=3027  rescues=65  pt_swaps=31  elapsed=4817.2s
+       chain 0: T=0.050  cur=3027  best=3027  acc=573/110001
+       chain 1: T=0.100  cur=3027  best=3027  acc=618/110001
+       chain 2: T=0.200  cur=3027  best=3027  acc=734/110001
+       chain 3: T=0.500  cur=3037  best=3027  acc=1858/110001
+       chain 4: T=1.000  cur=3052  best=3027  acc=4677/110001
+  [SA] iter=120000  global_best=3027  rescues=75  pt_swaps=33  elapsed=5263.7s
+       chain 0: T=0.050  cur=3027  best=3027  acc=623/120001
+       chain 1: T=0.100  cur=3027  best=3027  acc=663/120001
+       chain 2: T=0.200  cur=3027  best=3027  acc=806/120001
+       chain 3: T=0.500  cur=3036  best=3027  acc=2089/120001
+       chain 4: T=1.000  cur=3053  best=3027  acc=5093/120001
+  [SA] iter=130000  global_best=3027  rescues=80  pt_swaps=35  elapsed=5698.2s
+       chain 0: T=0.050  cur=3027  best=3027  acc=683/130001
+       chain 1: T=0.100  cur=3027  best=3027  acc=725/130001
+       chain 2: T=0.200  cur=3027  best=3027  acc=843/130001
+       chain 3: T=0.500  cur=3032  best=3027  acc=2268/130001
+       chain 4: T=1.000  cur=3064  best=3027  acc=5533/130001
+  [SA] iter=140000  global_best=3027  rescues=85  pt_swaps=39  elapsed=6133.5s
+       chain 0: T=0.050  cur=3027  best=3027  acc=746/140001
+       chain 1: T=0.100  cur=3027  best=3027  acc=778/140001
+       chain 2: T=0.200  cur=3027  best=3027  acc=880/140001
+       chain 3: T=0.500  cur=3034  best=3027  acc=2484/140001
+       chain 4: T=1.000  cur=3062  best=3027  acc=5954/140001
+  [SA] iter=150000  global_best=3027  rescues=90  pt_swaps=43  elapsed=6573.6s
+       chain 0: T=0.050  cur=3027  best=3027  acc=801/150001
+       chain 1: T=0.100  cur=3027  best=3027  acc=815/150001
+       chain 2: T=0.200  cur=3027  best=3027  acc=933/150001
+       chain 3: T=0.500  cur=3034  best=3027  acc=2668/150001
+       chain 4: T=1.000  cur=3070  best=3027  acc=6452/150001
+  [SA] iter=160000  global_best=3027  rescues=100  pt_swaps=48  elapsed=7020.9s
+       chain 0: T=0.050  cur=3027  best=3027  acc=838/160001
+       chain 1: T=0.100  cur=3027  best=3027  acc=866/160001
+       chain 2: T=0.200  cur=3027  best=3027  acc=1009/160001
+       chain 3: T=0.500  cur=3034  best=3027  acc=2887/160001
+       chain 4: T=1.000  cur=3053  best=3027  acc=6917/160001
+^C

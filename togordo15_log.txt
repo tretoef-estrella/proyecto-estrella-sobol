@@ -1,0 +1,15 @@
+====================================================================
+  Engine 15: TOGORDOELPERMUTADOR  (Move S permutational search)
+  Constructor v53 · 9 May 2026 · F_2 · target sub-3027
+  Move S = slot-swap (i,j): exchange (s,a,m) between flex dims
+====================================================================
+  RNG seed: 0xCA5AFA8B16F2DA0E
+  Phase 2 base iters: 200000
+  Witness: COMBO_3027 audit=3027 PASS
+
+[Phase 1] Pre-SA Move S exhaustive on all flex pairs (378 pairs)...
+[MOVE_S_EXHAUSTIVE] cumulative Δ = 0  (audit 3027 -> 3027, 1 sub-passes)
+  Phase 1 audit=3027 (Δ=0, 8.6s)
+
+[Phase 2] SA-PT 5 chains, Move S primary (mass 60), max iters 200000...
+^C

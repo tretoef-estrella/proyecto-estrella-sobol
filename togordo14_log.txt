@@ -1,0 +1,39 @@
+====================================================================
+  Engine 14: TOGORDOELCASCAPORRA_XL  (POLY10+POLY11 expansion)
+  Constructor v53 · 9 May 2026 · F_2 substrate · target sub-3027
+  v3 redesign: SMAX=11, POLY{7,8,9,10,11} = 318 (s,a) per slot
+====================================================================
+  RNG seed: 0xCA5AFA6C77581321
+  Phase 2 base iters: 200000
+  Pressure variant: SUM
+  T_struct: RETIRED (v2: structural moves only in Pre-SA greedy)
+  Witness: COMBO_3027 audit = 3027 (PASS)
+
+[Phase 1] Pre-SA F47 cross-era greedy exhaustive...
+[F47_CROSS_ERA] === Cycle 1 ===
+[F47_CROSS_ERA] Pass 1 cumulative Δ = 0  (audit 3027 -> 3027, 1 sub-passes)
+[F47_CROSS_ERA] Pass 2 cumulative Δ = 0  (audit 3027 -> 3027, 1 sub-passes)
+[F47_CROSS_ERA] Pass 3 cumulative Δ = 0  (audit 3027 -> 3027)
+[F47_CROSS_ERA] Phase 1 total Δ = 0  (final audit = 3027, 1 cycles)
+  Phase 1 final audit = 3027  (Δ from warm = 0, 8146.3s)
+
+[Phase 2] SA-PT 5 chains cold-shifted (max iters 200000)...
+  [SA] iter=10000  global_best=3027  rescues=5  pt_swaps=3  elapsed=426.3s
+       chain 0: T=0.050  cur=3027  best=3027  acc=62/10001
+       chain 1: T=0.100  cur=3027  best=3027  acc=60/10001
+       chain 2: T=0.200  cur=3027  best=3027  acc=45/10001
+       chain 3: T=0.500  cur=3034  best=3027  acc=131/10001
+       chain 4: T=1.000  cur=3056  best=3027  acc=290/10001
+  [SA] iter=20000  global_best=3027  rescues=10  pt_swaps=7  elapsed=853.5s
+       chain 0: T=0.050  cur=3027  best=3027  acc=127/20001
+       chain 1: T=0.100  cur=3027  best=3027  acc=124/20001
+       chain 2: T=0.200  cur=3027  best=3027  acc=118/20001
+       chain 3: T=0.500  cur=3033  best=3027  acc=237/20001
+       chain 4: T=1.000  cur=3059  best=3027  acc=679/20001
+  [SA] iter=30000  global_best=3027  rescues=15  pt_swaps=10  elapsed=1289.0s
+       chain 0: T=0.050  cur=3027  best=3027  acc=173/30001
+       chain 1: T=0.100  cur=3027  best=3027  acc=177/30001
+       chain 2: T=0.200  cur=3027  best=3027  acc=174/30001
+       chain 3: T=0.500  cur=3034  best=3027  acc=385/30001
+       chain 4: T=1.000  cur=3070  best=3027  acc=1157/30001
+^C

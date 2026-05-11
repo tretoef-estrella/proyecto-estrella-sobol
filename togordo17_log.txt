@@ -1,0 +1,799 @@
+====================================================================
+  Engine 17: TOGORDOELDESHEREDADO  (cold-start cross-genealogy)
+  Constructor v53 · 9 May 2026 · F_2 · target sub-3027 from cold
+  Cold-start from JK_2008 (3196), NO frozen, 4 seeds in serial
+====================================================================
+  Base seed: 0xDE584FBC7850D984
+  Total seeds: 4
+
+
+  ========== SEED 1 / 4 ==========
+  RNG seed: 0x406F3605071AA591
+  Cold-start: JK_2008 audit=3196 PASS
+  [Phase 1] Pre-SA F47 cross-substrate-NEW exhaustive (no frozen)...
+    [F47_NEW] === Cycle 1 ===
+    [F47_NEW] Pass 1 cumulative Δ = -18  (audit 3196 -> 3178, 3 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3178 -> 3178, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3178 -> 3178)
+    [F47_NEW] === Cycle 2 ===
+    [F47_NEW] Pass 1 cumulative Δ = -4  (audit 3178 -> 3174, 2 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3174 -> 3174, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3174 -> 3174)
+    [F47_NEW] === Cycle 3 ===
+    [F47_NEW] Pass 1 cumulative Δ = -4  (audit 3174 -> 3170, 3 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3170 -> 3170, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3170 -> 3170)
+    [F47_NEW] === Cycle 4 ===
+    [F47_NEW] Pass 1 cumulative Δ = 0  (audit 3170 -> 3170, 1 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3170 -> 3170, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3170 -> 3170)
+    [F47_NEW] Phase 1 total Δ = -26  (final audit = 3170, 4 cycles)
+  Phase 1 audit=3170 (17897s)
+  [Phase 2] SA-PT 5 chains, 6-move dispatcher (B/R/P1/Q1/W/S)...
+    [SA seed 0] iter=10000 global_best=3134 rescues=0 pt_swaps=0 396s
+      chain 0 T=0.050 cur=3134 best=3134 acc=166/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 1 T=0.100 cur=3141 best=3141 acc=172/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 2 T=0.200 cur=3140 best=3140 acc=196/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 3 T=0.500 cur=3140 best=3140 acc=283/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 4 T=1.000 cur=3157 best=3145 acc=337/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+    [SA seed 0] iter=20000 global_best=3128 rescues=2 pt_swaps=1 801s
+      chain 0 T=0.050 cur=3128 best=3128 acc=288/20001 mass[B/R/P1/Q1/W/S]=47/8/28/5/6/6
+      chain 1 T=0.100 cur=3133 best=3133 acc=271/20001 mass[B/R/P1/Q1/W/S]=36/9/38/5/6/6
+      chain 2 T=0.200 cur=3132 best=3132 acc=361/20001 mass[B/R/P1/Q1/W/S]=35/11/39/5/5/5
+      chain 3 T=0.500 cur=3149 best=3138 acc=499/20001 mass[B/R/P1/Q1/W/S]=37/16/32/5/5/5
+      chain 4 T=1.000 cur=3160 best=3145 acc=673/20001 mass[B/R/P1/Q1/W/S]=33/12/40/5/5/5
+    [SA seed 0] iter=30000 global_best=3128 rescues=6 pt_swaps=2 1225s
+      chain 0 T=0.050 cur=3128 best=3128 acc=437/30001 mass[B/R/P1/Q1/W/S]=47/8/28/5/6/6
+      chain 1 T=0.100 cur=3131 best=3131 acc=408/30001 mass[B/R/P1/Q1/W/S]=36/9/38/5/6/6
+      chain 2 T=0.200 cur=3130 best=3130 acc=520/30001 mass[B/R/P1/Q1/W/S]=35/11/39/5/5/5
+      chain 3 T=0.500 cur=3136 best=3136 acc=739/30001 mass[B/R/P1/Q1/W/S]=37/16/32/5/5/5
+      chain 4 T=1.000 cur=3146 best=3144 acc=1162/30001 mass[B/R/P1/Q1/W/S]=33/12/40/5/5/5
+    [SA seed 0] iter=40000 global_best=3128 rescues=10 pt_swaps=4 1648s
+      chain 0 T=0.050 cur=3128 best=3128 acc=569/40001 mass[B/R/P1/Q1/W/S]=5/17/5/28/23/22
+      chain 1 T=0.100 cur=3128 best=3128 acc=549/40001 mass[B/R/P1/Q1/W/S]=5/16/7/27/22/23
+      chain 2 T=0.200 cur=3128 best=3128 acc=669/40001 mass[B/R/P1/Q1/W/S]=15/10/13/21/21/20
+      chain 3 T=0.500 cur=3136 best=3133 acc=946/40001 mass[B/R/P1/Q1/W/S]=38/8/35/6/7/6
+      chain 4 T=1.000 cur=3154 best=3143 acc=1785/40001 mass[B/R/P1/Q1/W/S]=38/14/33/5/5/5
+    [SA seed 0] iter=50000 global_best=3127 rescues=14 pt_swaps=4 2051s
+      chain 0 T=0.050 cur=3127 best=3127 acc=593/50001 mass[B/R/P1/Q1/W/S]=5/17/5/28/23/22
+      chain 1 T=0.100 cur=3128 best=3128 acc=583/50001 mass[B/R/P1/Q1/W/S]=5/16/7/27/22/23
+      chain 2 T=0.200 cur=3127 best=3127 acc=709/50001 mass[B/R/P1/Q1/W/S]=15/10/13/21/21/20
+      chain 3 T=0.500 cur=3138 best=3133 acc=1168/50001 mass[B/R/P1/Q1/W/S]=38/8/35/6/7/6
+      chain 4 T=1.000 cur=3154 best=3141 acc=2315/50001 mass[B/R/P1/Q1/W/S]=38/14/33/5/5/5
+    [SA seed 0] iter=60000 global_best=3127 rescues=19 pt_swaps=8 2457s
+      chain 0 T=0.050 cur=3127 best=3127 acc=609/60001 mass[B/R/P1/Q1/W/S]=25/8/50/5/6/6
+      chain 1 T=0.100 cur=3127 best=3127 acc=606/60001 mass[B/R/P1/Q1/W/S]=40/11/26/7/8/8
+      chain 2 T=0.200 cur=3128 best=3127 acc=760/60001 mass[B/R/P1/Q1/W/S]=13/42/16/9/10/10
+      chain 3 T=0.500 cur=3130 best=3128 acc=1390/60001 mass[B/R/P1/Q1/W/S]=33/17/29/11/5/5
+      chain 4 T=1.000 cur=3146 best=3132 acc=2797/60001 mass[B/R/P1/Q1/W/S]=32/15/38/5/5/5
+    [SA seed 0] iter=70000 global_best=3124 rescues=22 pt_swaps=11 2873s
+      chain 0 T=0.050 cur=3126 best=3126 acc=721/70001 mass[B/R/P1/Q1/W/S]=25/8/50/5/6/6
+      chain 1 T=0.100 cur=3124 best=3124 acc=706/70001 mass[B/R/P1/Q1/W/S]=40/11/26/7/8/8
+      chain 2 T=0.200 cur=3127 best=3126 acc=826/70001 mass[B/R/P1/Q1/W/S]=13/42/16/9/10/10
+      chain 3 T=0.500 cur=3133 best=3128 acc=1594/70001 mass[B/R/P1/Q1/W/S]=33/17/29/11/5/5
+      chain 4 T=1.000 cur=3141 best=3132 acc=3252/70001 mass[B/R/P1/Q1/W/S]=32/15/38/5/5/5
+    [SA seed 0] iter=80000 global_best=3123 rescues=27 pt_swaps=14 3298s
+      chain 0 T=0.050 cur=3124 best=3124 acc=840/80001 mass[B/R/P1/Q1/W/S]=5/17/5/28/22/23
+      chain 1 T=0.100 cur=3123 best=3123 acc=806/80001 mass[B/R/P1/Q1/W/S]=12/15/6/26/20/21
+      chain 2 T=0.200 cur=3126 best=3123 acc=894/80001 mass[B/R/P1/Q1/W/S]=17/6/42/12/12/11
+      chain 3 T=0.500 cur=3134 best=3127 acc=1852/80001 mass[B/R/P1/Q1/W/S]=37/9/35/5/7/7
+      chain 4 T=1.000 cur=3142 best=3132 acc=3690/80001 mass[B/R/P1/Q1/W/S]=32/11/42/5/5/5
+    [SA seed 0] iter=90000 global_best=3123 rescues=32 pt_swaps=16 3707s
+      chain 0 T=0.050 cur=3123 best=3123 acc=866/90001 mass[B/R/P1/Q1/W/S]=5/17/5/28/22/23
+      chain 1 T=0.100 cur=3124 best=3123 acc=834/90001 mass[B/R/P1/Q1/W/S]=12/15/6/26/20/21
+      chain 2 T=0.200 cur=3126 best=3123 acc=987/90001 mass[B/R/P1/Q1/W/S]=17/6/42/12/12/11
+      chain 3 T=0.500 cur=3130 best=3127 acc=2074/90001 mass[B/R/P1/Q1/W/S]=37/9/35/5/7/7
+      chain 4 T=1.000 cur=3144 best=3132 acc=4117/90001 mass[B/R/P1/Q1/W/S]=32/11/42/5/5/5
+    [SA seed 0] iter=100000 global_best=3123 rescues=39 pt_swaps=16 4124s
+      chain 0 T=0.050 cur=3123 best=3123 acc=887/100001 mass[B/R/P1/Q1/W/S]=34/10/35/6/8/7
+      chain 1 T=0.100 cur=3124 best=3123 acc=847/100001 mass[B/R/P1/Q1/W/S]=18/15/36/9/11/11
+      chain 2 T=0.200 cur=3126 best=3123 acc=1063/100001 mass[B/R/P1/Q1/W/S]=9/28/20/14/14/15
+      chain 3 T=0.500 cur=3133 best=3126 acc=2352/100001 mass[B/R/P1/Q1/W/S]=37/15/31/7/5/5
+      chain 4 T=1.000 cur=3138 best=3132 acc=4639/100001 mass[B/R/P1/Q1/W/S]=40/12/33/5/5/5
+    [SA seed 0] iter=110000 global_best=3120 rescues=44 pt_swaps=16 4546s
+      chain 0 T=0.050 cur=3122 best=3122 acc=1016/110001 mass[B/R/P1/Q1/W/S]=34/10/35/6/8/7
+      chain 1 T=0.100 cur=3124 best=3123 acc=923/110001 mass[B/R/P1/Q1/W/S]=18/15/36/9/11/11
+      chain 2 T=0.200 cur=3126 best=3123 acc=1104/110001 mass[B/R/P1/Q1/W/S]=9/28/20/14/14/15
+      chain 3 T=0.500 cur=3121 best=3120 acc=2577/110001 mass[B/R/P1/Q1/W/S]=37/15/31/7/5/5
+      chain 4 T=1.000 cur=3156 best=3132 acc=5172/110001 mass[B/R/P1/Q1/W/S]=40/12/33/5/5/5
+    [SA seed 0] iter=120000 global_best=3119 rescues=49 pt_swaps=18 4966s
+      chain 0 T=0.050 cur=3122 best=3122 acc=1099/120001 mass[B/R/P1/Q1/W/S]=5/16/9/27/20/23
+      chain 1 T=0.100 cur=3119 best=3119 acc=1017/120001 mass[B/R/P1/Q1/W/S]=10/25/11/20/17/17
+      chain 2 T=0.200 cur=3124 best=3121 acc=1173/120001 mass[B/R/P1/Q1/W/S]=30/5/35/10/11/9
+      chain 3 T=0.500 cur=3134 best=3120 acc=2792/120001 mass[B/R/P1/Q1/W/S]=36/15/30/5/7/7
+      chain 4 T=1.000 cur=3147 best=3132 acc=5712/120001 mass[B/R/P1/Q1/W/S]=40/8/37/5/5/5
+    [SA seed 0] iter=130000 global_best=3117 rescues=54 pt_swaps=19 5378s
+      chain 0 T=0.050 cur=3117 best=3117 acc=1125/130001 mass[B/R/P1/Q1/W/S]=5/16/9/27/20/23
+      chain 1 T=0.100 cur=3122 best=3117 acc=1060/130001 mass[B/R/P1/Q1/W/S]=10/25/11/20/17/17
+      chain 2 T=0.200 cur=3125 best=3121 acc=1279/130001 mass[B/R/P1/Q1/W/S]=30/5/35/10/11/9
+      chain 3 T=0.500 cur=3138 best=3120 acc=3010/130001 mass[B/R/P1/Q1/W/S]=36/15/30/5/7/7
+      chain 4 T=1.000 cur=3140 best=3132 acc=6244/130001 mass[B/R/P1/Q1/W/S]=40/8/37/5/5/5
+    [SA seed 0] iter=140000 global_best=3115 rescues=60 pt_swaps=19 5794s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1147/140001 mass[B/R/P1/Q1/W/S]=30/18/34/5/7/6
+      chain 1 T=0.100 cur=3121 best=3117 acc=1097/140001 mass[B/R/P1/Q1/W/S]=19/15/34/10/11/11
+      chain 2 T=0.200 cur=3124 best=3121 acc=1378/140001 mass[B/R/P1/Q1/W/S]=11/33/9/15/15/17
+      chain 3 T=0.500 cur=3135 best=3120 acc=3225/140001 mass[B/R/P1/Q1/W/S]=39/6/35/8/6/6
+      chain 4 T=1.000 cur=3162 best=3132 acc=6805/140001 mass[B/R/P1/Q1/W/S]=39/7/39/5/5/5
+    [SA seed 0] iter=150000 global_best=3115 rescues=67 pt_swaps=19 6222s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1247/150001 mass[B/R/P1/Q1/W/S]=30/18/34/5/7/6
+      chain 1 T=0.100 cur=3121 best=3117 acc=1211/150001 mass[B/R/P1/Q1/W/S]=19/15/34/10/11/11
+      chain 2 T=0.200 cur=3124 best=3121 acc=1432/150001 mass[B/R/P1/Q1/W/S]=11/33/9/15/15/17
+      chain 3 T=0.500 cur=3134 best=3120 acc=3472/150001 mass[B/R/P1/Q1/W/S]=39/6/35/8/6/6
+      chain 4 T=1.000 cur=3163 best=3132 acc=7390/150001 mass[B/R/P1/Q1/W/S]=39/7/39/5/5/5
+    [SA seed 0] iter=160000 global_best=3115 rescues=73 pt_swaps=19 6645s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1337/160001 mass[B/R/P1/Q1/W/S]=6/9/5/30/23/27
+      chain 1 T=0.100 cur=3121 best=3117 acc=1318/160001 mass[B/R/P1/Q1/W/S]=13/16/7/23/21/20
+      chain 2 T=0.200 cur=3124 best=3121 acc=1471/160001 mass[B/R/P1/Q1/W/S]=17/6/41/13/12/11
+      chain 3 T=0.500 cur=3130 best=3120 acc=3661/160001 mass[B/R/P1/Q1/W/S]=40/6/37/5/6/6
+      chain 4 T=1.000 cur=3157 best=3132 acc=7894/160001 mass[B/R/P1/Q1/W/S]=40/11/34/5/5/5
+    [SA seed 0] iter=170000 global_best=3115 rescues=79 pt_swaps=19 7057s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1358/170001 mass[B/R/P1/Q1/W/S]=6/9/5/30/23/27
+      chain 1 T=0.100 cur=3121 best=3117 acc=1366/170001 mass[B/R/P1/Q1/W/S]=13/16/7/23/21/20
+      chain 2 T=0.200 cur=3124 best=3121 acc=1564/170001 mass[B/R/P1/Q1/W/S]=17/6/41/13/12/11
+      chain 3 T=0.500 cur=3126 best=3120 acc=3893/170001 mass[B/R/P1/Q1/W/S]=40/6/37/5/6/6
+      chain 4 T=1.000 cur=3159 best=3132 acc=8526/170001 mass[B/R/P1/Q1/W/S]=40/11/34/5/5/5
+    [SA seed 0] iter=180000 global_best=3115 rescues=85 pt_swaps=19 7469s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1383/180001 mass[B/R/P1/Q1/W/S]=27/19/35/6/7/6
+      chain 1 T=0.100 cur=3120 best=3117 acc=1403/180001 mass[B/R/P1/Q1/W/S]=30/12/29/9/10/10
+      chain 2 T=0.200 cur=3123 best=3121 acc=1648/180001 mass[B/R/P1/Q1/W/S]=11/30/13/14/15/17
+      chain 3 T=0.500 cur=3124 best=3120 acc=4111/180001 mass[B/R/P1/Q1/W/S]=35/10/39/6/5/5
+      chain 4 T=1.000 cur=3154 best=3132 acc=9086/180001 mass[B/R/P1/Q1/W/S]=40/9/36/5/5/5
+    [SA seed 0] iter=190000 global_best=3115 rescues=92 pt_swaps=19 7897s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1491/190001 mass[B/R/P1/Q1/W/S]=27/19/35/6/7/6
+      chain 1 T=0.100 cur=3120 best=3117 acc=1494/190001 mass[B/R/P1/Q1/W/S]=30/12/29/9/10/10
+      chain 2 T=0.200 cur=3123 best=3121 acc=1690/190001 mass[B/R/P1/Q1/W/S]=11/30/13/14/15/17
+      chain 3 T=0.500 cur=3129 best=3120 acc=4311/190001 mass[B/R/P1/Q1/W/S]=35/10/39/6/5/5
+      chain 4 T=1.000 cur=3141 best=3132 acc=9607/190001 mass[B/R/P1/Q1/W/S]=40/9/36/5/5/5
+  Phase 2 best=3115 (iters 200000, accepts 19597/1000000, PT 19, rescues 98, 8321s)
+  [Phase 5] Polish 50-pass (all 36 dims, no frozen)...
+  Polish best=3112 (Δ from SA=-3, 51s)
+  [Phase 6] D190 verify...
+  [D190 step 1] FINAL_VERIFY PASS (3112)
+  [D190 step 2] ROUNDTRIP PASS (togordo17_seed0_dump.txt)
+  [D190 step 3] STRUCTURAL PASS (frozen-check OMITTED — Engine 17 cold cross-genealogy)
+  D190 (steps 1-3): PASS
+  Seed 1 finished: audit=3112 (7.3 h)
+
+  ========== SEED 2 / 4 ==========
+  RNG seed: 0xE236BCCE86C421AE
+  Cold-start: JK_2008 audit=3196 PASS
+  [Phase 1] Pre-SA F47 cross-substrate-NEW exhaustive (no frozen)...
+    [F47_NEW] === Cycle 1 ===
+    [F47_NEW] Pass 1 cumulative Δ = -18  (audit 3196 -> 3178, 4 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3178 -> 3178, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3178 -> 3178)
+    [F47_NEW] === Cycle 2 ===
+    [F47_NEW] Pass 1 cumulative Δ = -4  (audit 3178 -> 3174, 2 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3174 -> 3174, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3174 -> 3174)
+    [F47_NEW] === Cycle 3 ===
+    [F47_NEW] Pass 1 cumulative Δ = 0  (audit 3174 -> 3174, 1 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3174 -> 3174, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3174 -> 3174)
+    [F47_NEW] Phase 1 total Δ = -22  (final audit = 3174, 3 cycles)
+  Phase 1 audit=3174 (13735s)
+  [Phase 2] SA-PT 5 chains, 6-move dispatcher (B/R/P1/Q1/W/S)...
+    [SA seed 1] iter=10000 global_best=3138 rescues=0 pt_swaps=3 404s
+      chain 0 T=0.050 cur=3138 best=3138 acc=132/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 1 T=0.100 cur=3146 best=3146 acc=157/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 2 T=0.200 cur=3144 best=3144 acc=161/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 3 T=0.500 cur=3158 best=3155 acc=243/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 4 T=1.000 cur=3150 best=3150 acc=373/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+    [SA seed 1] iter=20000 global_best=3137 rescues=3 pt_swaps=5 811s
+      chain 0 T=0.050 cur=3137 best=3137 acc=202/20001 mass[B/R/P1/Q1/W/S]=41/9/31/5/7/7
+      chain 1 T=0.100 cur=3138 best=3138 acc=266/20001 mass[B/R/P1/Q1/W/S]=46/9/27/5/7/6
+      chain 2 T=0.200 cur=3139 best=3139 acc=283/20001 mass[B/R/P1/Q1/W/S]=51/8/24/5/6/6
+      chain 3 T=0.500 cur=3151 best=3150 acc=422/20001 mass[B/R/P1/Q1/W/S]=37/14/34/5/5/5
+      chain 4 T=1.000 cur=3159 best=3149 acc=706/20001 mass[B/R/P1/Q1/W/S]=42/10/33/5/5/5
+    [SA seed 1] iter=30000 global_best=3135 rescues=7 pt_swaps=7 1233s
+      chain 0 T=0.050 cur=3135 best=3135 acc=303/30001 mass[B/R/P1/Q1/W/S]=41/9/31/5/7/7
+      chain 1 T=0.100 cur=3137 best=3136 acc=389/30001 mass[B/R/P1/Q1/W/S]=46/9/27/5/7/6
+      chain 2 T=0.200 cur=3138 best=3137 acc=402/30001 mass[B/R/P1/Q1/W/S]=51/8/24/5/6/6
+      chain 3 T=0.500 cur=3142 best=3141 acc=705/30001 mass[B/R/P1/Q1/W/S]=37/14/34/5/5/5
+      chain 4 T=1.000 cur=3169 best=3149 acc=1210/30001 mass[B/R/P1/Q1/W/S]=42/10/33/5/5/5
+    [SA seed 1] iter=40000 global_best=3129 rescues=10 pt_swaps=8 1668s
+      chain 0 T=0.050 cur=3133 best=3133 acc=393/40001 mass[B/R/P1/Q1/W/S]=7/15/9/29/20/20
+      chain 1 T=0.100 cur=3137 best=3136 acc=474/40001 mass[B/R/P1/Q1/W/S]=5/16/11/24/21/23
+      chain 2 T=0.200 cur=3129 best=3129 acc=513/40001 mass[B/R/P1/Q1/W/S]=15/14/14/22/17/18
+      chain 3 T=0.500 cur=3145 best=3135 acc=938/40001 mass[B/R/P1/Q1/W/S]=38/14/33/5/5/5
+      chain 4 T=1.000 cur=3158 best=3149 acc=1705/40001 mass[B/R/P1/Q1/W/S]=38/14/33/5/5/5
+    [SA seed 1] iter=50000 global_best=3129 rescues=16 pt_swaps=9 2103s
+      chain 0 T=0.050 cur=3133 best=3133 acc=419/50001 mass[B/R/P1/Q1/W/S]=7/15/9/29/20/20
+      chain 1 T=0.100 cur=3129 best=3129 acc=494/50001 mass[B/R/P1/Q1/W/S]=5/16/11/24/21/23
+      chain 2 T=0.200 cur=3137 best=3129 acc=548/50001 mass[B/R/P1/Q1/W/S]=15/14/14/22/17/18
+      chain 3 T=0.500 cur=3139 best=3135 acc=1153/50001 mass[B/R/P1/Q1/W/S]=38/14/33/5/5/5
+      chain 4 T=1.000 cur=3156 best=3149 acc=2267/50001 mass[B/R/P1/Q1/W/S]=38/14/33/5/5/5
+    [SA seed 1] iter=60000 global_best=3129 rescues=22 pt_swaps=10 2522s
+      chain 0 T=0.050 cur=3129 best=3129 acc=437/60001 mass[B/R/P1/Q1/W/S]=30/15/25/8/11/11
+      chain 1 T=0.100 cur=3133 best=3129 acc=512/60001 mass[B/R/P1/Q1/W/S]=40/13/19/9/10/9
+      chain 2 T=0.200 cur=3138 best=3129 acc=587/60001 mass[B/R/P1/Q1/W/S]=18/20/19/12/16/15
+      chain 3 T=0.500 cur=3146 best=3135 acc=1418/60001 mass[B/R/P1/Q1/W/S]=31/13/33/8/7/8
+      chain 4 T=1.000 cur=3165 best=3147 acc=2775/60001 mass[B/R/P1/Q1/W/S]=32/13/40/5/5/5
+    [SA seed 1] iter=70000 global_best=3128 rescues=25 pt_swaps=11 2946s
+      chain 0 T=0.050 cur=3128 best=3128 acc=489/70001 mass[B/R/P1/Q1/W/S]=30/15/25/8/11/11
+      chain 1 T=0.100 cur=3132 best=3129 acc=578/70001 mass[B/R/P1/Q1/W/S]=40/13/19/9/10/9
+      chain 2 T=0.200 cur=3132 best=3129 acc=654/70001 mass[B/R/P1/Q1/W/S]=18/20/19/12/16/15
+      chain 3 T=0.500 cur=3140 best=3132 acc=1601/70001 mass[B/R/P1/Q1/W/S]=31/13/33/8/7/8
+      chain 4 T=1.000 cur=3158 best=3143 acc=3293/70001 mass[B/R/P1/Q1/W/S]=32/13/40/5/5/5
+    [SA seed 1] iter=80000 global_best=3126 rescues=31 pt_swaps=12 3398s
+      chain 0 T=0.050 cur=3126 best=3126 acc=520/80001 mass[B/R/P1/Q1/W/S]=6/24/15/23/16/16
+      chain 1 T=0.100 cur=3130 best=3129 acc=680/80001 mass[B/R/P1/Q1/W/S]=12/25/9/19/17/18
+      chain 2 T=0.200 cur=3132 best=3129 acc=723/80001 mass[B/R/P1/Q1/W/S]=28/17/18/14/11/12
+      chain 3 T=0.500 cur=3141 best=3132 acc=1848/80001 mass[B/R/P1/Q1/W/S]=36/8/41/5/5/5
+      chain 4 T=1.000 cur=3152 best=3139 acc=3767/80001 mass[B/R/P1/Q1/W/S]=33/11/41/5/5/5
+    [SA seed 1] iter=90000 global_best=3126 rescues=38 pt_swaps=12 3846s
+      chain 0 T=0.050 cur=3126 best=3126 acc=532/90001 mass[B/R/P1/Q1/W/S]=6/24/15/23/16/16
+      chain 1 T=0.100 cur=3130 best=3129 acc=715/90001 mass[B/R/P1/Q1/W/S]=12/25/9/19/17/18
+      chain 2 T=0.200 cur=3132 best=3129 acc=773/90001 mass[B/R/P1/Q1/W/S]=28/17/18/14/11/12
+      chain 3 T=0.500 cur=3141 best=3132 acc=1997/90001 mass[B/R/P1/Q1/W/S]=36/8/41/5/5/5
+      chain 4 T=1.000 cur=3131 best=3129 acc=4255/90001 mass[B/R/P1/Q1/W/S]=33/11/41/5/5/5
+    [SA seed 1] iter=100000 global_best=3126 rescues=44 pt_swaps=12 4289s
+      chain 0 T=0.050 cur=3126 best=3126 acc=540/100001 mass[B/R/P1/Q1/W/S]=39/9/14/10/14/14
+      chain 1 T=0.100 cur=3129 best=3129 acc=758/100001 mass[B/R/P1/Q1/W/S]=20/10/28/13/15/14
+      chain 2 T=0.200 cur=3132 best=3129 acc=845/100001 mass[B/R/P1/Q1/W/S]=9/15/14/18/23/21
+      chain 3 T=0.500 cur=3140 best=3132 acc=2280/100001 mass[B/R/P1/Q1/W/S]=31/5/37/9/9/9
+      chain 4 T=1.000 cur=3143 best=3129 acc=4724/100001 mass[B/R/P1/Q1/W/S]=35/13/37/5/5/5
+    [SA seed 1] iter=110000 global_best=3126 rescues=49 pt_swaps=13 4727s
+      chain 0 T=0.050 cur=3126 best=3126 acc=553/110001 mass[B/R/P1/Q1/W/S]=39/9/14/10/14/14
+      chain 1 T=0.100 cur=3129 best=3129 acc=839/110001 mass[B/R/P1/Q1/W/S]=20/10/28/13/15/14
+      chain 2 T=0.200 cur=3133 best=3129 acc=887/110001 mass[B/R/P1/Q1/W/S]=9/15/14/18/23/21
+      chain 3 T=0.500 cur=3134 best=3132 acc=2510/110001 mass[B/R/P1/Q1/W/S]=31/5/37/9/9/9
+      chain 4 T=1.000 cur=3159 best=3129 acc=5217/110001 mass[B/R/P1/Q1/W/S]=35/13/37/5/5/5
+    [SA seed 1] iter=120000 global_best=3126 rescues=54 pt_swaps=13 5164s
+      chain 0 T=0.050 cur=3126 best=3126 acc=553/120001 mass[B/R/P1/Q1/W/S]=6/25/16/21/16/16
+      chain 1 T=0.100 cur=3129 best=3129 acc=914/120001 mass[B/R/P1/Q1/W/S]=13/25/9/19/16/18
+      chain 2 T=0.200 cur=3132 best=3129 acc=925/120001 mass[B/R/P1/Q1/W/S]=19/22/35/9/7/8
+      chain 3 T=0.500 cur=3132 best=3129 acc=2699/120001 mass[B/R/P1/Q1/W/S]=39/7/39/5/5/5
+      chain 4 T=1.000 cur=3168 best=3129 acc=5788/120001 mass[B/R/P1/Q1/W/S]=33/14/38/5/5/5
+    [SA seed 1] iter=130000 global_best=3126 rescues=61 pt_swaps=15 5618s
+      chain 0 T=0.050 cur=3126 best=3126 acc=553/130001 mass[B/R/P1/Q1/W/S]=6/25/16/21/16/16
+      chain 1 T=0.100 cur=3127 best=3127 acc=952/130001 mass[B/R/P1/Q1/W/S]=13/25/9/19/16/18
+      chain 2 T=0.200 cur=3129 best=3128 acc=1034/130001 mass[B/R/P1/Q1/W/S]=19/22/35/9/7/8
+      chain 3 T=0.500 cur=3138 best=3129 acc=2949/130001 mass[B/R/P1/Q1/W/S]=39/7/39/5/5/5
+      chain 4 T=1.000 cur=3163 best=3129 acc=6368/130001 mass[B/R/P1/Q1/W/S]=33/14/38/5/5/5
+    [SA seed 1] iter=140000 global_best=3124 rescues=65 pt_swaps=16 6057s
+      chain 0 T=0.050 cur=3124 best=3124 acc=566/140001 mass[B/R/P1/Q1/W/S]=37/9/14/11/15/14
+      chain 1 T=0.100 cur=3126 best=3124 acc=972/140001 mass[B/R/P1/Q1/W/S]=42/6/30/7/8/7
+      chain 2 T=0.200 cur=3129 best=3128 acc=1129/140001 mass[B/R/P1/Q1/W/S]=23/7/16/16/20/18
+      chain 3 T=0.500 cur=3135 best=3129 acc=3156/140001 mass[B/R/P1/Q1/W/S]=39/6/33/8/7/7
+      chain 4 T=1.000 cur=3163 best=3129 acc=6915/140001 mass[B/R/P1/Q1/W/S]=33/16/36/5/5/5
+    [SA seed 1] iter=150000 global_best=3123 rescues=71 pt_swaps=16 6502s
+      chain 0 T=0.050 cur=3123 best=3123 acc=601/150001 mass[B/R/P1/Q1/W/S]=37/9/14/11/15/14
+      chain 1 T=0.100 cur=3125 best=3124 acc=992/150001 mass[B/R/P1/Q1/W/S]=42/6/30/7/8/7
+      chain 2 T=0.200 cur=3129 best=3128 acc=1187/150001 mass[B/R/P1/Q1/W/S]=23/7/16/16/20/18
+      chain 3 T=0.500 cur=3138 best=3129 acc=3370/150001 mass[B/R/P1/Q1/W/S]=39/6/33/8/7/7
+      chain 4 T=1.000 cur=3163 best=3129 acc=7490/150001 mass[B/R/P1/Q1/W/S]=33/16/36/5/5/5
+    [SA seed 1] iter=160000 global_best=3123 rescues=76 pt_swaps=16 6944s
+      chain 0 T=0.050 cur=3123 best=3123 acc=649/160001 mass[B/R/P1/Q1/W/S]=6/26/16/21/15/16
+      chain 1 T=0.100 cur=3125 best=3124 acc=994/160001 mass[B/R/P1/Q1/W/S]=5/24/10/21/18/22
+      chain 2 T=0.200 cur=3129 best=3128 acc=1246/160001 mass[B/R/P1/Q1/W/S]=19/31/13/14/11/12
+      chain 3 T=0.500 cur=3138 best=3129 acc=3579/160001 mass[B/R/P1/Q1/W/S]=38/11/36/5/5/5
+      chain 4 T=1.000 cur=3155 best=3129 acc=8137/160001 mass[B/R/P1/Q1/W/S]=40/13/32/5/5/5
+    [SA seed 1] iter=170000 global_best=3123 rescues=84 pt_swaps=16 7395s
+      chain 0 T=0.050 cur=3123 best=3123 acc=671/170001 mass[B/R/P1/Q1/W/S]=6/26/16/21/15/16
+      chain 1 T=0.100 cur=3125 best=3124 acc=998/170001 mass[B/R/P1/Q1/W/S]=5/24/10/21/18/22
+      chain 2 T=0.200 cur=3125 best=3125 acc=1313/170001 mass[B/R/P1/Q1/W/S]=19/31/13/14/11/12
+      chain 3 T=0.500 cur=3138 best=3129 acc=3821/170001 mass[B/R/P1/Q1/W/S]=38/11/36/5/5/5
+      chain 4 T=1.000 cur=3158 best=3129 acc=8673/170001 mass[B/R/P1/Q1/W/S]=40/13/32/5/5/5
+    [SA seed 1] iter=180000 global_best=3123 rescues=89 pt_swaps=16 7838s
+      chain 0 T=0.050 cur=3123 best=3123 acc=691/180001 mass[B/R/P1/Q1/W/S]=37/9/14/11/15/14
+      chain 1 T=0.100 cur=3125 best=3124 acc=1000/180001 mass[B/R/P1/Q1/W/S]=42/8/20/10/11/9
+      chain 2 T=0.200 cur=3126 best=3125 acc=1363/180001 mass[B/R/P1/Q1/W/S]=33/5/24/11/14/13
+      chain 3 T=0.500 cur=3134 best=3129 acc=4054/180001 mass[B/R/P1/Q1/W/S]=40/8/34/6/6/6
+      chain 4 T=1.000 cur=3140 best=3129 acc=9306/180001 mass[B/R/P1/Q1/W/S]=35/13/37/5/5/5
+    [SA seed 1] iter=190000 global_best=3114 rescues=92 pt_swaps=19 8277s
+      chain 0 T=0.050 cur=3123 best=3123 acc=739/190001 mass[B/R/P1/Q1/W/S]=37/9/14/11/15/14
+      chain 1 T=0.100 cur=3123 best=3123 acc=1030/190001 mass[B/R/P1/Q1/W/S]=42/8/20/10/11/9
+      chain 2 T=0.200 cur=3127 best=3123 acc=1437/190001 mass[B/R/P1/Q1/W/S]=33/5/24/11/14/13
+      chain 3 T=0.500 cur=3123 best=3114 acc=4335/190001 mass[B/R/P1/Q1/W/S]=40/8/34/6/6/6
+      chain 4 T=1.000 cur=3151 best=3129 acc=9774/190001 mass[B/R/P1/Q1/W/S]=35/13/37/5/5/5
+    [AUTO-EXTEND seed 1] 200000 -> 250000
+    [SA seed 1] iter=200000 global_best=3114 rescues=96 pt_swaps=21 8719s
+      chain 0 T=0.050 cur=3123 best=3123 acc=805/200001 mass[B/R/P1/Q1/W/S]=6/25/16/21/15/17
+      chain 1 T=0.100 cur=3123 best=3123 acc=1089/200001 mass[B/R/P1/Q1/W/S]=5/25/10/20/18/22
+      chain 2 T=0.200 cur=3114 best=3114 acc=1599/200001 mass[B/R/P1/Q1/W/S]=29/19/28/9/7/8
+      chain 3 T=0.500 cur=3138 best=3114 acc=4564/200001 mass[B/R/P1/Q1/W/S]=29/9/44/6/6/6
+      chain 4 T=1.000 cur=3157 best=3129 acc=10307/200001 mass[B/R/P1/Q1/W/S]=38/12/35/5/5/5
+    [SA seed 1] iter=210000 global_best=3110 rescues=102 pt_swaps=25 9162s
+      chain 0 T=0.050 cur=3110 best=3110 acc=825/210001 mass[B/R/P1/Q1/W/S]=6/25/16/21/15/17
+      chain 1 T=0.100 cur=3123 best=3110 acc=1115/210001 mass[B/R/P1/Q1/W/S]=5/25/10/20/18/22
+      chain 2 T=0.200 cur=3123 best=3111 acc=1711/210001 mass[B/R/P1/Q1/W/S]=29/19/28/9/7/8
+      chain 3 T=0.500 cur=3128 best=3114 acc=4795/210001 mass[B/R/P1/Q1/W/S]=29/9/44/6/6/6
+      chain 4 T=1.000 cur=3152 best=3129 acc=10913/210001 mass[B/R/P1/Q1/W/S]=38/12/35/5/5/5
+    [SA seed 1] iter=220000 global_best=3110 rescues=107 pt_swaps=26 9600s
+      chain 0 T=0.050 cur=3110 best=3110 acc=862/220001 mass[B/R/P1/Q1/W/S]=38/9/14/11/15/13
+      chain 1 T=0.100 cur=3123 best=3110 acc=1128/220001 mass[B/R/P1/Q1/W/S]=58/6/14/7/8/7
+      chain 2 T=0.200 cur=3123 best=3111 acc=1777/220001 mass[B/R/P1/Q1/W/S]=11/16/16/17/21/19
+      chain 3 T=0.500 cur=3128 best=3114 acc=5054/220001 mass[B/R/P1/Q1/W/S]=42/13/30/5/5/5
+      chain 4 T=1.000 cur=3146 best=3129 acc=11423/220001 mass[B/R/P1/Q1/W/S]=32/14/39/5/5/5
+    [SA seed 1] iter=230000 global_best=3110 rescues=113 pt_swaps=26 10043s
+      chain 0 T=0.050 cur=3110 best=3110 acc=933/230001 mass[B/R/P1/Q1/W/S]=38/9/14/11/15/13
+      chain 1 T=0.100 cur=3123 best=3110 acc=1213/230001 mass[B/R/P1/Q1/W/S]=58/6/14/7/8/7
+      chain 2 T=0.200 cur=3123 best=3111 acc=1794/230001 mass[B/R/P1/Q1/W/S]=11/16/16/17/21/19
+      chain 3 T=0.500 cur=3133 best=3114 acc=5331/230001 mass[B/R/P1/Q1/W/S]=42/13/30/5/5/5
+      chain 4 T=1.000 cur=3150 best=3129 acc=11895/230001 mass[B/R/P1/Q1/W/S]=32/14/39/5/5/5
+    [SA seed 1] iter=240000 global_best=3110 rescues=120 pt_swaps=29 10491s
+      chain 0 T=0.050 cur=3110 best=3110 acc=1016/240001 mass[B/R/P1/Q1/W/S]=6/25/17/20/15/17
+      chain 1 T=0.100 cur=3123 best=3110 acc=1282/240001 mass[B/R/P1/Q1/W/S]=5/23/11/21/19/21
+      chain 2 T=0.200 cur=3123 best=3111 acc=1828/240001 mass[B/R/P1/Q1/W/S]=49/11/11/11/9/9
+      chain 3 T=0.500 cur=3137 best=3114 acc=5583/240001 mass[B/R/P1/Q1/W/S]=44/8/28/7/6/7
+      chain 4 T=1.000 cur=3144 best=3129 acc=12362/240001 mass[B/R/P1/Q1/W/S]=37/13/35/5/5/5
+    [AUTO-EXTEND seed 1] 250000 -> 300000
+    [SA seed 1] iter=250000 global_best=3110 rescues=127 pt_swaps=29 10934s
+      chain 0 T=0.050 cur=3110 best=3110 acc=1051/250001 mass[B/R/P1/Q1/W/S]=6/25/17/20/15/17
+      chain 1 T=0.100 cur=3123 best=3110 acc=1299/250001 mass[B/R/P1/Q1/W/S]=5/23/11/21/19/21
+      chain 2 T=0.200 cur=3124 best=3111 acc=1914/250001 mass[B/R/P1/Q1/W/S]=49/11/11/11/9/9
+      chain 3 T=0.500 cur=3131 best=3114 acc=5812/250001 mass[B/R/P1/Q1/W/S]=44/8/28/7/6/7
+      chain 4 T=1.000 cur=3152 best=3129 acc=12787/250001 mass[B/R/P1/Q1/W/S]=37/13/35/5/5/5
+    [SA seed 1] iter=260000 global_best=3110 rescues=132 pt_swaps=29 11371s
+      chain 0 T=0.050 cur=3110 best=3110 acc=1098/260001 mass[B/R/P1/Q1/W/S]=38/9/13/11/16/13
+      chain 1 T=0.100 cur=3123 best=3110 acc=1312/260001 mass[B/R/P1/Q1/W/S]=41/9/19/10/11/10
+      chain 2 T=0.200 cur=3123 best=3111 acc=2000/260001 mass[B/R/P1/Q1/W/S]=14/16/16/16/19/19
+      chain 3 T=0.500 cur=3131 best=3114 acc=6036/260001 mass[B/R/P1/Q1/W/S]=31/18/36/5/5/5
+      chain 4 T=1.000 cur=3150 best=3129 acc=13311/260001 mass[B/R/P1/Q1/W/S]=33/13/39/5/5/5
+    [SA seed 1] iter=270000 global_best=3110 rescues=138 pt_swaps=30 11813s
+      chain 0 T=0.050 cur=3110 best=3110 acc=1174/270001 mass[B/R/P1/Q1/W/S]=38/9/13/11/16/13
+      chain 1 T=0.100 cur=3123 best=3110 acc=1389/270001 mass[B/R/P1/Q1/W/S]=41/9/19/10/11/10
+      chain 2 T=0.200 cur=3123 best=3111 acc=2036/270001 mass[B/R/P1/Q1/W/S]=14/16/16/16/19/19
+      chain 3 T=0.500 cur=3138 best=3114 acc=6260/270001 mass[B/R/P1/Q1/W/S]=31/18/36/5/5/5
+      chain 4 T=1.000 cur=3154 best=3129 acc=13770/270001 mass[B/R/P1/Q1/W/S]=33/13/39/5/5/5
+    [SA seed 1] iter=280000 global_best=3110 rescues=145 pt_swaps=33 12260s
+      chain 0 T=0.050 cur=3110 best=3110 acc=1250/280001 mass[B/R/P1/Q1/W/S]=6/25/17/20/14/18
+      chain 1 T=0.100 cur=3123 best=3110 acc=1470/280001 mass[B/R/P1/Q1/W/S]=5/24/11/21/19/20
+      chain 2 T=0.200 cur=3123 best=3111 acc=2077/280001 mass[B/R/P1/Q1/W/S]=20/17/17/17/15/14
+      chain 3 T=0.500 cur=3131 best=3114 acc=6461/280001 mass[B/R/P1/Q1/W/S]=33/15/34/6/6/6
+      chain 4 T=1.000 cur=3141 best=3129 acc=14301/280001 mass[B/R/P1/Q1/W/S]=36/10/39/5/5/5
+    [SA seed 1] iter=290000 global_best=3110 rescues=152 pt_swaps=33 12705s
+      chain 0 T=0.050 cur=3110 best=3110 acc=1279/290001 mass[B/R/P1/Q1/W/S]=6/25/17/20/14/18
+      chain 1 T=0.100 cur=3123 best=3110 acc=1487/290001 mass[B/R/P1/Q1/W/S]=5/24/11/21/19/20
+      chain 2 T=0.200 cur=3123 best=3111 acc=2140/290001 mass[B/R/P1/Q1/W/S]=20/17/17/17/15/14
+      chain 3 T=0.500 cur=3132 best=3114 acc=6678/290001 mass[B/R/P1/Q1/W/S]=33/15/34/6/6/6
+      chain 4 T=1.000 cur=3144 best=3129 acc=14827/290001 mass[B/R/P1/Q1/W/S]=36/10/39/5/5/5
+  Phase 2 best=3110 (iters 300000, accepts 27174/1500000, PT 35, rescues 156, 13136s)
+  [Phase 5] Polish 50-pass (all 36 dims, no frozen)...
+  Polish best=3106 (Δ from SA=-4, 53s)
+  [Phase 6] D190 verify...
+  [D190 step 1] FINAL_VERIFY PASS (3106)
+  [D190 step 2] ROUNDTRIP PASS (togordo17_seed1_dump.txt)
+  [D190 step 3] STRUCTURAL PASS (frozen-check OMITTED — Engine 17 cold cross-genealogy)
+  D190 (steps 1-3): PASS
+  Seed 2 finished: audit=3106 (7.5 h)
+
+  ========== SEED 3 / 4 ==========
+  RNG seed: 0x04FE2290058FADBB
+  Cold-start: JK_2008 audit=3196 PASS
+  [Phase 1] Pre-SA F47 cross-substrate-NEW exhaustive (no frozen)...
+    [F47_NEW] === Cycle 1 ===
+    [F47_NEW] Pass 1 cumulative Δ = -10  (audit 3196 -> 3186, 4 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3186 -> 3186, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3186 -> 3186)
+    [F47_NEW] === Cycle 2 ===
+    [F47_NEW] Pass 1 cumulative Δ = -7  (audit 3186 -> 3179, 3 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3179 -> 3179, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3179 -> 3179)
+    [F47_NEW] === Cycle 3 ===
+    [F47_NEW] Pass 1 cumulative Δ = -5  (audit 3179 -> 3174, 2 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3174 -> 3174, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3174 -> 3174)
+    [F47_NEW] === Cycle 4 ===
+    [F47_NEW] Pass 1 cumulative Δ = -2  (audit 3174 -> 3172, 2 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3172 -> 3172, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3172 -> 3172)
+    [F47_NEW] === Cycle 5 ===
+    [F47_NEW] Pass 1 cumulative Δ = -1  (audit 3172 -> 3171, 2 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3171 -> 3171, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3171 -> 3171)
+    [F47_NEW] Phase 1 total Δ = -25  (final audit = 3171, 5 cycles)
+  Phase 1 audit=3171 (25713s)
+  [Phase 2] SA-PT 5 chains, 6-move dispatcher (B/R/P1/Q1/W/S)...
+    [SA seed 2] iter=10000 global_best=3140 rescues=0 pt_swaps=3 416s
+      chain 0 T=0.050 cur=3150 best=3150 acc=132/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 1 T=0.100 cur=3147 best=3147 acc=143/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 2 T=0.200 cur=3140 best=3140 acc=160/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 3 T=0.500 cur=3154 best=3153 acc=224/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 4 T=1.000 cur=3169 best=3148 acc=311/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+    [SA seed 2] iter=20000 global_best=3139 rescues=2 pt_swaps=6 843s
+      chain 0 T=0.050 cur=3139 best=3139 acc=234/20001 mass[B/R/P1/Q1/W/S]=29/20/24/11/8/8
+      chain 1 T=0.100 cur=3142 best=3140 acc=235/20001 mass[B/R/P1/Q1/W/S]=33/14/34/5/7/7
+      chain 2 T=0.200 cur=3144 best=3140 acc=264/20001 mass[B/R/P1/Q1/W/S]=30/21/31/5/7/6
+      chain 3 T=0.500 cur=3147 best=3145 acc=377/20001 mass[B/R/P1/Q1/W/S]=37/11/37/5/5/5
+      chain 4 T=1.000 cur=3167 best=3148 acc=665/20001 mass[B/R/P1/Q1/W/S]=39/15/31/5/5/5
+    [SA seed 2] iter=30000 global_best=3129 rescues=7 pt_swaps=7 1299s
+      chain 0 T=0.050 cur=3129 best=3129 acc=356/30001 mass[B/R/P1/Q1/W/S]=29/20/24/11/8/8
+      chain 1 T=0.100 cur=3137 best=3137 acc=341/30001 mass[B/R/P1/Q1/W/S]=33/14/34/5/7/7
+      chain 2 T=0.200 cur=3142 best=3140 acc=406/30001 mass[B/R/P1/Q1/W/S]=30/21/31/5/7/6
+      chain 3 T=0.500 cur=3145 best=3143 acc=623/30001 mass[B/R/P1/Q1/W/S]=37/11/37/5/5/5
+      chain 4 T=1.000 cur=3162 best=3148 acc=1175/30001 mass[B/R/P1/Q1/W/S]=39/15/31/5/5/5
+    [SA seed 2] iter=40000 global_best=3128 rescues=11 pt_swaps=7 1748s
+      chain 0 T=0.050 cur=3128 best=3128 acc=437/40001 mass[B/R/P1/Q1/W/S]=25/18/19/10/14/14
+      chain 1 T=0.100 cur=3136 best=3136 acc=438/40001 mass[B/R/P1/Q1/W/S]=12/19/5/27/19/18
+      chain 2 T=0.200 cur=3141 best=3140 acc=541/40001 mass[B/R/P1/Q1/W/S]=18/6/9/27/18/22
+      chain 3 T=0.500 cur=3146 best=3143 acc=807/40001 mass[B/R/P1/Q1/W/S]=41/13/25/7/7/7
+      chain 4 T=1.000 cur=3156 best=3145 acc=1667/40001 mass[B/R/P1/Q1/W/S]=35/11/39/5/5/5
+    [SA seed 2] iter=50000 global_best=3128 rescues=15 pt_swaps=9 2186s
+      chain 0 T=0.050 cur=3128 best=3128 acc=512/50001 mass[B/R/P1/Q1/W/S]=25/18/19/10/14/14
+      chain 1 T=0.100 cur=3136 best=3136 acc=466/50001 mass[B/R/P1/Q1/W/S]=12/19/5/27/19/18
+      chain 2 T=0.200 cur=3128 best=3128 acc=617/50001 mass[B/R/P1/Q1/W/S]=18/6/9/27/18/22
+      chain 3 T=0.500 cur=3142 best=3130 acc=1029/50001 mass[B/R/P1/Q1/W/S]=41/13/25/7/7/7
+      chain 4 T=1.000 cur=3155 best=3140 acc=2152/50001 mass[B/R/P1/Q1/W/S]=35/11/39/5/5/5
+    [SA seed 2] iter=60000 global_best=3124 rescues=19 pt_swaps=11 2621s
+      chain 0 T=0.050 cur=3124 best=3124 acc=609/60001 mass[B/R/P1/Q1/W/S]=14/19/26/17/12/12
+      chain 1 T=0.100 cur=3128 best=3128 acc=503/60001 mass[B/R/P1/Q1/W/S]=17/11/42/8/11/11
+      chain 2 T=0.200 cur=3136 best=3128 acc=658/60001 mass[B/R/P1/Q1/W/S]=30/16/39/5/5/5
+      chain 3 T=0.500 cur=3137 best=3130 acc=1187/60001 mass[B/R/P1/Q1/W/S]=27/10/45/6/6/6
+      chain 4 T=1.000 cur=3177 best=3140 acc=2536/60001 mass[B/R/P1/Q1/W/S]=30/18/37/5/5/5
+    [SA seed 2] iter=70000 global_best=3122 rescues=25 pt_swaps=11 3076s
+      chain 0 T=0.050 cur=3122 best=3122 acc=699/70001 mass[B/R/P1/Q1/W/S]=14/19/26/17/12/12
+      chain 1 T=0.100 cur=3128 best=3128 acc=583/70001 mass[B/R/P1/Q1/W/S]=17/11/42/8/11/11
+      chain 2 T=0.200 cur=3137 best=3128 acc=759/70001 mass[B/R/P1/Q1/W/S]=30/16/39/5/5/5
+      chain 3 T=0.500 cur=3136 best=3130 acc=1349/70001 mass[B/R/P1/Q1/W/S]=27/10/45/6/6/6
+      chain 4 T=1.000 cur=3179 best=3140 acc=3038/70001 mass[B/R/P1/Q1/W/S]=30/18/37/5/5/5
+    [SA seed 2] iter=80000 global_best=3121 rescues=32 pt_swaps=11 3534s
+      chain 0 T=0.050 cur=3121 best=3121 acc=778/80001 mass[B/R/P1/Q1/W/S]=18/14/10/15/22/21
+      chain 1 T=0.100 cur=3128 best=3128 acc=646/80001 mass[B/R/P1/Q1/W/S]=12/19/5/26/19/19
+      chain 2 T=0.200 cur=3127 best=3127 acc=879/80001 mass[B/R/P1/Q1/W/S]=18/12/15/18/19/18
+      chain 3 T=0.500 cur=3136 best=3130 acc=1521/80001 mass[B/R/P1/Q1/W/S]=40/5/31/8/8/8
+      chain 4 T=1.000 cur=3178 best=3140 acc=3524/80001 mass[B/R/P1/Q1/W/S]=40/13/32/5/5/5
+    [SA seed 2] iter=90000 global_best=3121 rescues=37 pt_swaps=12 3971s
+      chain 0 T=0.050 cur=3121 best=3121 acc=846/90001 mass[B/R/P1/Q1/W/S]=18/14/10/15/22/21
+      chain 1 T=0.100 cur=3127 best=3127 acc=671/90001 mass[B/R/P1/Q1/W/S]=12/19/5/26/19/19
+      chain 2 T=0.200 cur=3128 best=3127 acc=936/90001 mass[B/R/P1/Q1/W/S]=18/12/15/18/19/18
+      chain 3 T=0.500 cur=3138 best=3130 acc=1695/90001 mass[B/R/P1/Q1/W/S]=40/5/31/8/8/8
+      chain 4 T=1.000 cur=3170 best=3140 acc=3987/90001 mass[B/R/P1/Q1/W/S]=40/13/32/5/5/5
+    [SA seed 2] iter=100000 global_best=3117 rescues=42 pt_swaps=12 4416s
+      chain 0 T=0.050 cur=3117 best=3117 acc=904/100001 mass[B/R/P1/Q1/W/S]=28/25/18/12/8/9
+      chain 1 T=0.100 cur=3127 best=3127 acc=711/100001 mass[B/R/P1/Q1/W/S]=17/11/42/8/11/11
+      chain 2 T=0.200 cur=3128 best=3127 acc=998/100001 mass[B/R/P1/Q1/W/S]=26/19/16/13/13/13
+      chain 3 T=0.500 cur=3136 best=3130 acc=1833/100001 mass[B/R/P1/Q1/W/S]=26/26/30/6/6/6
+      chain 4 T=1.000 cur=3197 best=3140 acc=4515/100001 mass[B/R/P1/Q1/W/S]=35/17/33/5/5/5
+    [SA seed 2] iter=110000 global_best=3115 rescues=46 pt_swaps=12 4872s
+      chain 0 T=0.050 cur=3115 best=3115 acc=977/110001 mass[B/R/P1/Q1/W/S]=28/25/18/12/8/9
+      chain 1 T=0.100 cur=3127 best=3127 acc=792/110001 mass[B/R/P1/Q1/W/S]=17/11/42/8/11/11
+      chain 2 T=0.200 cur=3128 best=3127 acc=1067/110001 mass[B/R/P1/Q1/W/S]=26/19/16/13/13/13
+      chain 3 T=0.500 cur=3136 best=3130 acc=1978/110001 mass[B/R/P1/Q1/W/S]=26/26/30/6/6/6
+      chain 4 T=1.000 cur=3174 best=3140 acc=5057/110001 mass[B/R/P1/Q1/W/S]=35/17/33/5/5/5
+    [SA seed 2] iter=120000 global_best=3115 rescues=55 pt_swaps=12 5341s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1056/120001 mass[B/R/P1/Q1/W/S]=14/15/11/16/22/22
+      chain 1 T=0.100 cur=3127 best=3127 acc=882/120001 mass[B/R/P1/Q1/W/S]=12/19/5/25/19/20
+      chain 2 T=0.200 cur=3128 best=3127 acc=1155/120001 mass[B/R/P1/Q1/W/S]=9/12/28/17/17/17
+      chain 3 T=0.500 cur=3142 best=3130 acc=2133/120001 mass[B/R/P1/Q1/W/S]=37/6/30/9/9/9
+      chain 4 T=1.000 cur=3166 best=3140 acc=5549/120001 mass[B/R/P1/Q1/W/S]=40/13/32/5/5/5
+    [SA seed 2] iter=130000 global_best=3115 rescues=60 pt_swaps=12 5776s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1099/130001 mass[B/R/P1/Q1/W/S]=14/15/11/16/22/22
+      chain 1 T=0.100 cur=3127 best=3127 acc=911/130001 mass[B/R/P1/Q1/W/S]=12/19/5/25/19/20
+      chain 2 T=0.200 cur=3128 best=3127 acc=1209/130001 mass[B/R/P1/Q1/W/S]=9/12/28/17/17/17
+      chain 3 T=0.500 cur=3142 best=3130 acc=2348/130001 mass[B/R/P1/Q1/W/S]=37/6/30/9/9/9
+      chain 4 T=1.000 cur=3166 best=3140 acc=6064/130001 mass[B/R/P1/Q1/W/S]=40/13/32/5/5/5
+    [SA seed 2] iter=140000 global_best=3115 rescues=66 pt_swaps=12 6214s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1161/140001 mass[B/R/P1/Q1/W/S]=19/17/24/16/12/12
+      chain 1 T=0.100 cur=3127 best=3127 acc=941/140001 mass[B/R/P1/Q1/W/S]=17/11/43/8/11/10
+      chain 2 T=0.200 cur=3128 best=3127 acc=1281/140001 mass[B/R/P1/Q1/W/S]=27/21/9/15/14/14
+      chain 3 T=0.500 cur=3141 best=3130 acc=2568/140001 mass[B/R/P1/Q1/W/S]=34/18/33/5/5/5
+      chain 4 T=1.000 cur=3167 best=3140 acc=6543/140001 mass[B/R/P1/Q1/W/S]=37/7/41/5/5/5
+    [SA seed 2] iter=150000 global_best=3115 rescues=70 pt_swaps=12 6657s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1217/150001 mass[B/R/P1/Q1/W/S]=19/17/24/16/12/12
+      chain 1 T=0.100 cur=3123 best=3123 acc=1014/150001 mass[B/R/P1/Q1/W/S]=17/11/43/8/11/10
+      chain 2 T=0.200 cur=3128 best=3127 acc=1331/150001 mass[B/R/P1/Q1/W/S]=27/21/9/15/14/14
+      chain 3 T=0.500 cur=3134 best=3130 acc=2741/150001 mass[B/R/P1/Q1/W/S]=34/18/33/5/5/5
+      chain 4 T=1.000 cur=3168 best=3140 acc=7084/150001 mass[B/R/P1/Q1/W/S]=37/7/41/5/5/5
+    [SA seed 2] iter=160000 global_best=3115 rescues=78 pt_swaps=12 7116s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1282/160001 mass[B/R/P1/Q1/W/S]=14/16/11/17/21/21
+      chain 1 T=0.100 cur=3123 best=3123 acc=1077/160001 mass[B/R/P1/Q1/W/S]=9/29/12/20/14/16
+      chain 2 T=0.200 cur=3128 best=3127 acc=1398/160001 mass[B/R/P1/Q1/W/S]=17/11/25/15/16/16
+      chain 3 T=0.500 cur=3134 best=3129 acc=2876/160001 mass[B/R/P1/Q1/W/S]=32/5/36/9/9/9
+      chain 4 T=1.000 cur=3178 best=3140 acc=7576/160001 mass[B/R/P1/Q1/W/S]=38/16/31/5/5/5
+    [SA seed 2] iter=170000 global_best=3115 rescues=83 pt_swaps=12 7552s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1313/170001 mass[B/R/P1/Q1/W/S]=14/16/11/17/21/21
+      chain 1 T=0.100 cur=3123 best=3123 acc=1109/170001 mass[B/R/P1/Q1/W/S]=9/29/12/20/14/16
+      chain 2 T=0.200 cur=3128 best=3127 acc=1459/170001 mass[B/R/P1/Q1/W/S]=17/11/25/15/16/16
+      chain 3 T=0.500 cur=3134 best=3129 acc=3051/170001 mass[B/R/P1/Q1/W/S]=32/5/36/9/9/9
+      chain 4 T=1.000 cur=3158 best=3140 acc=8008/170001 mass[B/R/P1/Q1/W/S]=38/16/31/5/5/5
+    [SA seed 2] iter=180000 global_best=3115 rescues=89 pt_swaps=12 7993s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1352/180001 mass[B/R/P1/Q1/W/S]=19/17/23/16/13/12
+      chain 1 T=0.100 cur=3123 best=3123 acc=1137/180001 mass[B/R/P1/Q1/W/S]=27/8/20/12/18/15
+      chain 2 T=0.200 cur=3128 best=3127 acc=1513/180001 mass[B/R/P1/Q1/W/S]=14/21/19/16/15/15
+      chain 3 T=0.500 cur=3137 best=3129 acc=3252/180001 mass[B/R/P1/Q1/W/S]=47/17/21/5/5/5
+      chain 4 T=1.000 cur=3171 best=3140 acc=8475/180001 mass[B/R/P1/Q1/W/S]=38/14/33/5/5/5
+    [SA seed 2] iter=190000 global_best=3115 rescues=95 pt_swaps=12 8441s
+      chain 0 T=0.050 cur=3115 best=3115 acc=1413/190001 mass[B/R/P1/Q1/W/S]=19/17/23/16/13/12
+      chain 1 T=0.100 cur=3123 best=3123 acc=1197/190001 mass[B/R/P1/Q1/W/S]=27/8/20/12/18/15
+      chain 2 T=0.200 cur=3128 best=3127 acc=1562/190001 mass[B/R/P1/Q1/W/S]=14/21/19/16/15/15
+      chain 3 T=0.500 cur=3139 best=3129 acc=3415/190001 mass[B/R/P1/Q1/W/S]=47/17/21/5/5/5
+      chain 4 T=1.000 cur=3162 best=3140 acc=8968/190001 mass[B/R/P1/Q1/W/S]=38/14/33/5/5/5
+  Phase 2 best=3115 (iters 200000, accepts 17359/1000000, PT 12, rescues 102, 8894s)
+  [Phase 5] Polish 50-pass (all 36 dims, no frozen)...
+  Polish best=3102 (Δ from SA=-13, 81s)
+  [Phase 6] D190 verify...
+  [D190 step 1] FINAL_VERIFY PASS (3102)
+  [D190 step 2] ROUNDTRIP PASS (togordo17_seed2_dump.txt)
+  [D190 step 3] STRUCTURAL PASS (frozen-check OMITTED — Engine 17 cold cross-genealogy)
+  D190 (steps 1-3): PASS
+  Seed 3 finished: audit=3102 (9.6 h)
+
+  ========== SEED 4 / 4 ==========
+  RNG seed: 0xA685A959857929D0
+  Cold-start: JK_2008 audit=3196 PASS
+  [Phase 1] Pre-SA F47 cross-substrate-NEW exhaustive (no frozen)...
+    [F47_NEW] === Cycle 1 ===
+    [F47_NEW] Pass 1 cumulative Δ = -18  (audit 3196 -> 3178, 3 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3178 -> 3178, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3178 -> 3178)
+    [F47_NEW] === Cycle 2 ===
+    [F47_NEW] Pass 1 cumulative Δ = -3  (audit 3178 -> 3175, 2 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3175 -> 3175, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3175 -> 3175)
+    [F47_NEW] === Cycle 3 ===
+    [F47_NEW] Pass 1 cumulative Δ = 0  (audit 3175 -> 3175, 1 sub-passes)
+    [F47_NEW] Pass 2 cumulative Δ = 0  (audit 3175 -> 3175, 1 sub-passes)
+    [F47_NEW] Pass 3 cumulative Δ = 0  (audit 3175 -> 3175)
+    [F47_NEW] Phase 1 total Δ = -21  (final audit = 3175, 3 cycles)
+  Phase 1 audit=3175 (13186s)
+  [Phase 2] SA-PT 5 chains, 6-move dispatcher (B/R/P1/Q1/W/S)...
+    [SA seed 3] iter=10000 global_best=3142 rescues=1 pt_swaps=2 423s
+      chain 0 T=0.050 cur=3143 best=3143 acc=123/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 1 T=0.100 cur=3142 best=3142 acc=177/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 2 T=0.200 cur=3149 best=3146 acc=180/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 3 T=0.500 cur=3143 best=3143 acc=222/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+      chain 4 T=1.000 cur=3165 best=3161 acc=429/10001 mass[B/R/P1/Q1/W/S]=15/15/35/15/10/10
+    [SA seed 3] iter=20000 global_best=3139 rescues=4 pt_swaps=5 853s
+      chain 0 T=0.050 cur=3139 best=3139 acc=211/20001 mass[B/R/P1/Q1/W/S]=33/6/36/6/10/9
+      chain 1 T=0.100 cur=3141 best=3139 acc=272/20001 mass[B/R/P1/Q1/W/S]=35/15/31/5/7/7
+      chain 2 T=0.200 cur=3141 best=3139 acc=293/20001 mass[B/R/P1/Q1/W/S]=38/13/34/5/5/5
+      chain 3 T=0.500 cur=3146 best=3142 acc=383/20001 mass[B/R/P1/Q1/W/S]=41/9/35/5/5/5
+      chain 4 T=1.000 cur=3154 best=3154 acc=805/20001 mass[B/R/P1/Q1/W/S]=32/13/40/5/5/5
+    [SA seed 3] iter=30000 global_best=3134 rescues=8 pt_swaps=5 1301s
+      chain 0 T=0.050 cur=3134 best=3134 acc=335/30001 mass[B/R/P1/Q1/W/S]=33/6/36/6/10/9
+      chain 1 T=0.100 cur=3138 best=3138 acc=386/30001 mass[B/R/P1/Q1/W/S]=35/15/31/5/7/7
+      chain 2 T=0.200 cur=3139 best=3138 acc=424/30001 mass[B/R/P1/Q1/W/S]=38/13/34/5/5/5
+      chain 3 T=0.500 cur=3143 best=3139 acc=611/30001 mass[B/R/P1/Q1/W/S]=41/9/35/5/5/5
+      chain 4 T=1.000 cur=3173 best=3152 acc=1305/30001 mass[B/R/P1/Q1/W/S]=32/13/40/5/5/5
+    [SA seed 3] iter=40000 global_best=3133 rescues=11 pt_swaps=7 1744s
+      chain 0 T=0.050 cur=3134 best=3134 acc=405/40001 mass[B/R/P1/Q1/W/S]=23/22/5/22/13/15
+      chain 1 T=0.100 cur=3133 best=3133 acc=513/40001 mass[B/R/P1/Q1/W/S]=9/10/9/31/20/21
+      chain 2 T=0.200 cur=3137 best=3133 acc=597/40001 mass[B/R/P1/Q1/W/S]=19/8/9/22/21/21
+      chain 3 T=0.500 cur=3143 best=3138 acc=890/40001 mass[B/R/P1/Q1/W/S]=30/18/31/7/7/7
+      chain 4 T=1.000 cur=3168 best=3152 acc=1843/40001 mass[B/R/P1/Q1/W/S]=37/15/33/5/5/5
+    [SA seed 3] iter=50000 global_best=3132 rescues=16 pt_swaps=8 2178s
+      chain 0 T=0.050 cur=3132 best=3132 acc=452/50001 mass[B/R/P1/Q1/W/S]=23/22/5/22/13/15
+      chain 1 T=0.100 cur=3134 best=3133 acc=533/50001 mass[B/R/P1/Q1/W/S]=9/10/9/31/20/21
+      chain 2 T=0.200 cur=3136 best=3133 acc=674/50001 mass[B/R/P1/Q1/W/S]=19/8/9/22/21/21
+      chain 3 T=0.500 cur=3140 best=3137 acc=1103/50001 mass[B/R/P1/Q1/W/S]=30/18/31/7/7/7
+      chain 4 T=1.000 cur=3162 best=3152 acc=2397/50001 mass[B/R/P1/Q1/W/S]=37/15/33/5/5/5
+    [SA seed 3] iter=60000 global_best=3132 rescues=22 pt_swaps=8 2617s
+      chain 0 T=0.050 cur=3132 best=3132 acc=502/60001 mass[B/R/P1/Q1/W/S]=9/10/41/10/16/14
+      chain 1 T=0.100 cur=3134 best=3133 acc=563/60001 mass[B/R/P1/Q1/W/S]=24/22/25/7/11/11
+      chain 2 T=0.200 cur=3136 best=3133 acc=722/60001 mass[B/R/P1/Q1/W/S]=8/37/34/7/7/7
+      chain 3 T=0.500 cur=3134 best=3134 acc=1287/60001 mass[B/R/P1/Q1/W/S]=45/13/27/5/5/5
+      chain 4 T=1.000 cur=3163 best=3146 acc=2835/60001 mass[B/R/P1/Q1/W/S]=36/12/37/5/5/5
+    [SA seed 3] iter=70000 global_best=3131 rescues=27 pt_swaps=8 3065s
+      chain 0 T=0.050 cur=3131 best=3131 acc=592/70001 mass[B/R/P1/Q1/W/S]=9/10/41/10/16/14
+      chain 1 T=0.100 cur=3134 best=3133 acc=633/70001 mass[B/R/P1/Q1/W/S]=24/22/25/7/11/11
+      chain 2 T=0.200 cur=3136 best=3133 acc=801/70001 mass[B/R/P1/Q1/W/S]=8/37/34/7/7/7
+      chain 3 T=0.500 cur=3134 best=3133 acc=1495/70001 mass[B/R/P1/Q1/W/S]=45/13/27/5/5/5
+      chain 4 T=1.000 cur=3146 best=3145 acc=3247/70001 mass[B/R/P1/Q1/W/S]=36/12/37/5/5/5
+    [SA seed 3] iter=80000 global_best=3130 rescues=32 pt_swaps=8 3514s
+      chain 0 T=0.050 cur=3130 best=3130 acc=673/80001 mass[B/R/P1/Q1/W/S]=23/20/10/20/13/14
+      chain 1 T=0.100 cur=3134 best=3133 acc=678/80001 mass[B/R/P1/Q1/W/S]=9/10/9/31/20/21
+      chain 2 T=0.200 cur=3135 best=3133 acc=890/80001 mass[B/R/P1/Q1/W/S]=30/5/14/17/17/17
+      chain 3 T=0.500 cur=3141 best=3133 acc=1727/80001 mass[B/R/P1/Q1/W/S]=39/14/26/7/7/7
+      chain 4 T=1.000 cur=3160 best=3145 acc=3712/80001 mass[B/R/P1/Q1/W/S]=34/12/39/5/5/5
+    [SA seed 3] iter=90000 global_best=3130 rescues=37 pt_swaps=11 3949s
+      chain 0 T=0.050 cur=3130 best=3130 acc=724/90001 mass[B/R/P1/Q1/W/S]=23/20/10/20/13/14
+      chain 1 T=0.100 cur=3134 best=3133 acc=699/90001 mass[B/R/P1/Q1/W/S]=9/10/9/31/20/21
+      chain 2 T=0.200 cur=3134 best=3133 acc=964/90001 mass[B/R/P1/Q1/W/S]=30/5/14/17/17/17
+      chain 3 T=0.500 cur=3138 best=3133 acc=1890/90001 mass[B/R/P1/Q1/W/S]=39/14/26/7/7/7
+      chain 4 T=1.000 cur=3150 best=3145 acc=4173/90001 mass[B/R/P1/Q1/W/S]=34/12/39/5/5/5
+    [SA seed 3] iter=100000 global_best=3129 rescues=44 pt_swaps=14 4392s
+      chain 0 T=0.050 cur=3129 best=3129 acc=793/100001 mass[B/R/P1/Q1/W/S]=11/13/25/13/19/19
+      chain 1 T=0.100 cur=3130 best=3130 acc=744/100001 mass[B/R/P1/Q1/W/S]=16/15/50/5/7/7
+      chain 2 T=0.200 cur=3134 best=3133 acc=1025/100001 mass[B/R/P1/Q1/W/S]=10/29/34/9/9/9
+      chain 3 T=0.500 cur=3138 best=3133 acc=2114/100001 mass[B/R/P1/Q1/W/S]=31/17/34/6/6/6
+      chain 4 T=1.000 cur=3163 best=3145 acc=4642/100001 mass[B/R/P1/Q1/W/S]=32/16/35/7/5/5
+    [SA seed 3] iter=110000 global_best=3127 rescues=51 pt_swaps=15 4846s
+      chain 0 T=0.050 cur=3127 best=3127 acc=839/110001 mass[B/R/P1/Q1/W/S]=11/13/25/13/19/19
+      chain 1 T=0.100 cur=3129 best=3129 acc=853/110001 mass[B/R/P1/Q1/W/S]=16/15/50/5/7/7
+      chain 2 T=0.200 cur=3134 best=3133 acc=1076/110001 mass[B/R/P1/Q1/W/S]=10/29/34/9/9/9
+      chain 3 T=0.500 cur=3145 best=3133 acc=2387/110001 mass[B/R/P1/Q1/W/S]=31/17/34/6/6/6
+      chain 4 T=1.000 cur=3176 best=3145 acc=5052/110001 mass[B/R/P1/Q1/W/S]=32/16/35/7/5/5
+    [SA seed 3] iter=120000 global_best=3127 rescues=57 pt_swaps=15 5296s
+      chain 0 T=0.050 cur=3127 best=3127 acc=868/120001 mass[B/R/P1/Q1/W/S]=22/17/19/18/12/12
+      chain 1 T=0.100 cur=3129 best=3129 acc=1013/120001 mass[B/R/P1/Q1/W/S]=10/11/5/30/22/22
+      chain 2 T=0.200 cur=3132 best=3132 acc=1140/120001 mass[B/R/P1/Q1/W/S]=19/7/11/21/21/21
+      chain 3 T=0.500 cur=3141 best=3133 acc=2582/120001 mass[B/R/P1/Q1/W/S]=42/17/25/6/5/5
+      chain 4 T=1.000 cur=3185 best=3145 acc=5540/120001 mass[B/R/P1/Q1/W/S]=36/13/36/5/5/5
+    [SA seed 3] iter=130000 global_best=3127 rescues=62 pt_swaps=15 5732s
+      chain 0 T=0.050 cur=3127 best=3127 acc=910/130001 mass[B/R/P1/Q1/W/S]=22/17/19/18/12/12
+      chain 1 T=0.100 cur=3129 best=3129 acc=1059/130001 mass[B/R/P1/Q1/W/S]=10/11/5/30/22/22
+      chain 2 T=0.200 cur=3130 best=3130 acc=1186/130001 mass[B/R/P1/Q1/W/S]=19/7/11/21/21/21
+      chain 3 T=0.500 cur=3144 best=3133 acc=2853/130001 mass[B/R/P1/Q1/W/S]=42/17/25/6/5/5
+      chain 4 T=1.000 cur=3170 best=3145 acc=6075/130001 mass[B/R/P1/Q1/W/S]=36/13/36/5/5/5
+    [SA seed 3] iter=140000 global_best=3127 rescues=68 pt_swaps=15 6171s
+      chain 0 T=0.050 cur=3127 best=3127 acc=946/140001 mass[B/R/P1/Q1/W/S]=12/15/14/15/22/22
+      chain 1 T=0.100 cur=3129 best=3129 acc=1095/140001 mass[B/R/P1/Q1/W/S]=19/18/38/7/9/9
+      chain 2 T=0.200 cur=3129 best=3129 acc=1235/140001 mass[B/R/P1/Q1/W/S]=10/28/35/9/9/9
+      chain 3 T=0.500 cur=3134 best=3131 acc=3100/140001 mass[B/R/P1/Q1/W/S]=39/9/35/5/6/6
+      chain 4 T=1.000 cur=3139 best=3136 acc=6586/140001 mass[B/R/P1/Q1/W/S]=40/11/34/5/5/5
+    [SA seed 3] iter=150000 global_best=3127 rescues=72 pt_swaps=15 6611s
+      chain 0 T=0.050 cur=3127 best=3127 acc=972/150001 mass[B/R/P1/Q1/W/S]=12/15/14/15/22/22
+      chain 1 T=0.100 cur=3127 best=3127 acc=1221/150001 mass[B/R/P1/Q1/W/S]=19/18/38/7/9/9
+      chain 2 T=0.200 cur=3129 best=3129 acc=1300/150001 mass[B/R/P1/Q1/W/S]=10/28/35/9/9/9
+      chain 3 T=0.500 cur=3134 best=3128 acc=3338/150001 mass[B/R/P1/Q1/W/S]=39/9/35/5/6/6
+      chain 4 T=1.000 cur=3147 best=3133 acc=7049/150001 mass[B/R/P1/Q1/W/S]=40/11/34/5/5/5
+    [SA seed 3] iter=160000 global_best=3127 rescues=77 pt_swaps=17 7052s
+      chain 0 T=0.050 cur=3127 best=3127 acc=1031/160001 mass[B/R/P1/Q1/W/S]=20/18/19/19/12/12
+      chain 1 T=0.100 cur=3127 best=3127 acc=1294/160001 mass[B/R/P1/Q1/W/S]=10/11/10/27/21/21
+      chain 2 T=0.200 cur=3127 best=3127 acc=1371/160001 mass[B/R/P1/Q1/W/S]=28/5/20/16/16/15
+      chain 3 T=0.500 cur=3137 best=3128 acc=3531/160001 mass[B/R/P1/Q1/W/S]=36/14/27/8/8/7
+      chain 4 T=1.000 cur=3158 best=3133 acc=7508/160001 mass[B/R/P1/Q1/W/S]=29/19/37/5/5/5
+    [SA seed 3] iter=170000 global_best=3127 rescues=83 pt_swaps=19 7495s
+      chain 0 T=0.050 cur=3127 best=3127 acc=1115/170001 mass[B/R/P1/Q1/W/S]=20/18/19/19/12/12
+      chain 1 T=0.100 cur=3127 best=3127 acc=1329/170001 mass[B/R/P1/Q1/W/S]=10/11/10/27/21/21
+      chain 2 T=0.200 cur=3128 best=3127 acc=1430/170001 mass[B/R/P1/Q1/W/S]=28/5/20/16/16/15
+      chain 3 T=0.500 cur=3134 best=3128 acc=3708/170001 mass[B/R/P1/Q1/W/S]=36/14/27/8/8/7
+      chain 4 T=1.000 cur=3164 best=3133 acc=7993/170001 mass[B/R/P1/Q1/W/S]=29/19/37/5/5/5
+    [SA seed 3] iter=180000 global_best=3127 rescues=90 pt_swaps=22 7937s
+      chain 0 T=0.050 cur=3127 best=3127 acc=1186/180001 mass[B/R/P1/Q1/W/S]=13/15/14/14/22/22
+      chain 1 T=0.100 cur=3127 best=3127 acc=1361/180001 mass[B/R/P1/Q1/W/S]=24/22/23/9/11/11
+      chain 2 T=0.200 cur=3128 best=3127 acc=1473/180001 mass[B/R/P1/Q1/W/S]=8/42/10/13/13/14
+      chain 3 T=0.500 cur=3134 best=3128 acc=3877/180001 mass[B/R/P1/Q1/W/S]=32/11/41/5/5/6
+      chain 4 T=1.000 cur=3159 best=3133 acc=8401/180001 mass[B/R/P1/Q1/W/S]=36/13/36/5/5/5
+    [SA seed 3] iter=190000 global_best=3127 rescues=96 pt_swaps=23 8383s
+      chain 0 T=0.050 cur=3127 best=3127 acc=1250/190001 mass[B/R/P1/Q1/W/S]=13/15/14/14/22/22
+      chain 1 T=0.100 cur=3127 best=3127 acc=1435/190001 mass[B/R/P1/Q1/W/S]=24/22/23/9/11/11
+      chain 2 T=0.200 cur=3128 best=3127 acc=1501/190001 mass[B/R/P1/Q1/W/S]=8/42/10/13/13/14
+      chain 3 T=0.500 cur=3139 best=3128 acc=4080/190001 mass[B/R/P1/Q1/W/S]=32/11/41/5/5/6
+      chain 4 T=1.000 cur=3164 best=3133 acc=8940/190001 mass[B/R/P1/Q1/W/S]=36/13/36/5/5/5
+    [AUTO-EXTEND seed 3] 200000 -> 250000
+    [SA seed 3] iter=200000 global_best=3125 rescues=102 pt_swaps=25 8829s
+      chain 0 T=0.050 cur=3127 best=3127 acc=1301/200001 mass[B/R/P1/Q1/W/S]=21/17/19/19/12/12
+      chain 1 T=0.100 cur=3126 best=3126 acc=1479/200001 mass[B/R/P1/Q1/W/S]=10/11/10/26/22/21
+      chain 2 T=0.200 cur=3125 best=3125 acc=1549/200001 mass[B/R/P1/Q1/W/S]=22/5/34/13/14/12
+      chain 3 T=0.500 cur=3135 best=3128 acc=4299/200001 mass[B/R/P1/Q1/W/S]=38/6/36/7/7/6
+      chain 4 T=1.000 cur=3170 best=3133 acc=9510/200001 mass[B/R/P1/Q1/W/S]=38/13/34/5/5/5
+    [SA seed 3] iter=210000 global_best=3125 rescues=107 pt_swaps=29 9265s
+      chain 0 T=0.050 cur=3125 best=3125 acc=1384/210001 mass[B/R/P1/Q1/W/S]=21/17/19/19/12/12
+      chain 1 T=0.100 cur=3127 best=3125 acc=1518/210001 mass[B/R/P1/Q1/W/S]=10/11/10/26/22/21
+      chain 2 T=0.200 cur=3127 best=3125 acc=1614/210001 mass[B/R/P1/Q1/W/S]=22/5/34/13/14/12
+      chain 3 T=0.500 cur=3132 best=3128 acc=4503/210001 mass[B/R/P1/Q1/W/S]=38/6/36/7/7/6
+      chain 4 T=1.000 cur=3163 best=3133 acc=10014/210001 mass[B/R/P1/Q1/W/S]=38/13/34/5/5/5
+    [SA seed 3] iter=220000 global_best=3125 rescues=113 pt_swaps=30 9706s
+      chain 0 T=0.050 cur=3125 best=3125 acc=1462/220001 mass[B/R/P1/Q1/W/S]=13/15/14/14/22/22
+      chain 1 T=0.100 cur=3126 best=3125 acc=1544/220001 mass[B/R/P1/Q1/W/S]=25/21/23/9/11/11
+      chain 2 T=0.200 cur=3127 best=3125 acc=1686/220001 mass[B/R/P1/Q1/W/S]=9/37/11/14/13/16
+      chain 3 T=0.500 cur=3130 best=3128 acc=4699/220001 mass[B/R/P1/Q1/W/S]=29/19/36/5/5/6
+      chain 4 T=1.000 cur=3165 best=3133 acc=10530/220001 mass[B/R/P1/Q1/W/S]=37/14/34/5/5/5
+    [SA seed 3] iter=230000 global_best=3125 rescues=120 pt_swaps=31 10156s
+      chain 0 T=0.050 cur=3125 best=3125 acc=1526/230001 mass[B/R/P1/Q1/W/S]=13/15/14/14/22/22
+      chain 1 T=0.100 cur=3126 best=3125 acc=1617/230001 mass[B/R/P1/Q1/W/S]=25/21/23/9/11/11
+      chain 2 T=0.200 cur=3127 best=3125 acc=1723/230001 mass[B/R/P1/Q1/W/S]=9/37/11/14/13/16
+      chain 3 T=0.500 cur=3134 best=3128 acc=4877/230001 mass[B/R/P1/Q1/W/S]=29/19/36/5/5/6
+      chain 4 T=1.000 cur=3162 best=3133 acc=11125/230001 mass[B/R/P1/Q1/W/S]=37/14/34/5/5/5
+    [SA seed 3] iter=240000 global_best=3125 rescues=126 pt_swaps=33 10601s
+      chain 0 T=0.050 cur=3125 best=3125 acc=1594/240001 mass[B/R/P1/Q1/W/S]=21/18/19/18/12/12
+      chain 1 T=0.100 cur=3126 best=3125 acc=1699/240001 mass[B/R/P1/Q1/W/S]=9/11/10/27/21/22
+      chain 2 T=0.200 cur=3126 best=3125 acc=1758/240001 mass[B/R/P1/Q1/W/S]=40/5/17/13/14/11
+      chain 3 T=0.500 cur=3130 best=3128 acc=5070/240001 mass[B/R/P1/Q1/W/S]=35/8/36/8/7/6
+      chain 4 T=1.000 cur=3191 best=3133 acc=11623/240001 mass[B/R/P1/Q1/W/S]=33/13/39/5/5/5
+    [AUTO-EXTEND seed 3] 250000 -> 300000
+    [SA seed 3] iter=250000 global_best=3123 rescues=131 pt_swaps=33 11038s
+      chain 0 T=0.050 cur=3125 best=3125 acc=1669/250001 mass[B/R/P1/Q1/W/S]=21/18/19/18/12/12
+      chain 1 T=0.100 cur=3123 best=3123 acc=1734/250001 mass[B/R/P1/Q1/W/S]=9/11/10/27/21/22
+      chain 2 T=0.200 cur=3125 best=3125 acc=1812/250001 mass[B/R/P1/Q1/W/S]=40/5/17/13/14/11
+      chain 3 T=0.500 cur=3131 best=3127 acc=5284/250001 mass[B/R/P1/Q1/W/S]=35/8/36/8/7/6
+      chain 4 T=1.000 cur=3168 best=3133 acc=12171/250001 mass[B/R/P1/Q1/W/S]=33/13/39/5/5/5
+    [SA seed 3] iter=260000 global_best=3123 rescues=136 pt_swaps=35 11475s
+      chain 0 T=0.050 cur=3123 best=3123 acc=1726/260001 mass[B/R/P1/Q1/W/S]=13/15/14/15/21/22
+      chain 1 T=0.100 cur=3125 best=3123 acc=1758/260001 mass[B/R/P1/Q1/W/S]=24/20/21/16/10/9
+      chain 2 T=0.200 cur=3125 best=3125 acc=1881/260001 mass[B/R/P1/Q1/W/S]=9/36/11/14/13/17
+      chain 3 T=0.500 cur=3130 best=3125 acc=5506/260001 mass[B/R/P1/Q1/W/S]=29/24/31/5/5/6
+      chain 4 T=1.000 cur=3152 best=3133 acc=12713/260001 mass[B/R/P1/Q1/W/S]=37/17/31/5/5/5
+    [SA seed 3] iter=270000 global_best=3123 rescues=143 pt_swaps=38 11924s
+      chain 0 T=0.050 cur=3123 best=3123 acc=1772/270001 mass[B/R/P1/Q1/W/S]=13/15/14/15/21/22
+      chain 1 T=0.100 cur=3125 best=3123 acc=1809/270001 mass[B/R/P1/Q1/W/S]=24/20/21/16/10/9
+      chain 2 T=0.200 cur=3125 best=3125 acc=1930/270001 mass[B/R/P1/Q1/W/S]=9/36/11/14/13/17
+      chain 3 T=0.500 cur=3130 best=3125 acc=5702/270001 mass[B/R/P1/Q1/W/S]=29/24/31/5/5/6
+      chain 4 T=1.000 cur=3152 best=3133 acc=13131/270001 mass[B/R/P1/Q1/W/S]=37/17/31/5/5/5
+    [SA seed 3] iter=280000 global_best=3122 rescues=149 pt_swaps=39 12368s
+      chain 0 T=0.050 cur=3122 best=3122 acc=1809/280001 mass[B/R/P1/Q1/W/S]=34/15/16/14/11/10
+      chain 1 T=0.100 cur=3125 best=3123 acc=1871/280001 mass[B/R/P1/Q1/W/S]=10/12/11/15/24/28
+      chain 2 T=0.200 cur=3125 best=3125 acc=1984/280001 mass[B/R/P1/Q1/W/S]=40/5/17/13/14/11
+      chain 3 T=0.500 cur=3127 best=3123 acc=5911/280001 mass[B/R/P1/Q1/W/S]=37/11/34/6/6/6
+      chain 4 T=1.000 cur=3140 best=3133 acc=13602/280001 mass[B/R/P1/Q1/W/S]=35/13/37/5/5/5
+    [SA seed 3] iter=290000 global_best=3120 rescues=152 pt_swaps=43 12796s
+      chain 0 T=0.050 cur=3120 best=3120 acc=1885/290001 mass[B/R/P1/Q1/W/S]=34/15/16/14/11/10
+      chain 1 T=0.100 cur=3122 best=3122 acc=1907/290001 mass[B/R/P1/Q1/W/S]=10/12/11/15/24/28
+      chain 2 T=0.200 cur=3125 best=3123 acc=2069/290001 mass[B/R/P1/Q1/W/S]=40/5/17/13/14/11
+      chain 3 T=0.500 cur=3134 best=3123 acc=6100/290001 mass[B/R/P1/Q1/W/S]=37/11/34/6/6/6
+      chain 4 T=1.000 cur=3140 best=3132 acc=14059/290001 mass[B/R/P1/Q1/W/S]=35/13/37/5/5/5
+    [AUTO-EXTEND seed 3] 300000 -> 350000
+    [SA seed 3] iter=300000 global_best=3120 rescues=159 pt_swaps=44 13242s
+      chain 0 T=0.050 cur=3120 best=3120 acc=1951/300001 mass[B/R/P1/Q1/W/S]=11/26/12/14/18/19
+      chain 1 T=0.100 cur=3122 best=3122 acc=1926/300001 mass[B/R/P1/Q1/W/S]=38/16/18/13/8/7
+      chain 2 T=0.200 cur=3125 best=3123 acc=2156/300001 mass[B/R/P1/Q1/W/S]=12/32/19/12/11/14
+      chain 3 T=0.500 cur=3130 best=3123 acc=6295/300001 mass[B/R/P1/Q1/W/S]=30/10/42/6/6/6
+      chain 4 T=1.000 cur=3150 best=3132 acc=14445/300001 mass[B/R/P1/Q1/W/S]=36/12/37/5/5/5
+    [SA seed 3] iter=310000 global_best=3118 rescues=163 pt_swaps=45 13683s
+      chain 0 T=0.050 cur=3119 best=3119 acc=1984/310001 mass[B/R/P1/Q1/W/S]=11/26/12/14/18/19
+      chain 1 T=0.100 cur=3122 best=3122 acc=1989/310001 mass[B/R/P1/Q1/W/S]=38/16/18/13/8/7
+      chain 2 T=0.200 cur=3118 best=3118 acc=2227/310001 mass[B/R/P1/Q1/W/S]=12/32/19/12/11/14
+      chain 3 T=0.500 cur=3126 best=3120 acc=6478/310001 mass[B/R/P1/Q1/W/S]=30/10/42/6/6/6
+      chain 4 T=1.000 cur=3160 best=3132 acc=14852/310001 mass[B/R/P1/Q1/W/S]=36/12/37/5/5/5
+    [SA seed 3] iter=320000 global_best=3113 rescues=166 pt_swaps=47 14118s
+      chain 0 T=0.050 cur=3113 best=3113 acc=2022/320001 mass[B/R/P1/Q1/W/S]=22/10/21/18/15/14
+      chain 1 T=0.100 cur=3119 best=3113 acc=2055/320001 mass[B/R/P1/Q1/W/S]=9/11/20/14/21/25
+      chain 2 T=0.200 cur=3122 best=3115 acc=2276/320001 mass[B/R/P1/Q1/W/S]=22/12/34/11/12/9
+      chain 3 T=0.500 cur=3130 best=3120 acc=6682/320001 mass[B/R/P1/Q1/W/S]=24/23/35/6/6/6
+      chain 4 T=1.000 cur=3166 best=3132 acc=15327/320001 mass[B/R/P1/Q1/W/S]=36/11/38/5/5/5
+    [SA seed 3] iter=330000 global_best=3111 rescues=171 pt_swaps=47 14557s
+      chain 0 T=0.050 cur=3111 best=3111 acc=2071/330001 mass[B/R/P1/Q1/W/S]=22/10/21/18/15/14
+      chain 1 T=0.100 cur=3119 best=3113 acc=2089/330001 mass[B/R/P1/Q1/W/S]=9/11/20/14/21/25
+      chain 2 T=0.200 cur=3122 best=3115 acc=2324/330001 mass[B/R/P1/Q1/W/S]=22/12/34/11/12/9
+      chain 3 T=0.500 cur=3132 best=3120 acc=6862/330001 mass[B/R/P1/Q1/W/S]=24/23/35/6/6/6
+      chain 4 T=1.000 cur=3152 best=3132 acc=15810/330001 mass[B/R/P1/Q1/W/S]=36/11/38/5/5/5
+    [SA seed 3] iter=340000 global_best=3111 rescues=178 pt_swaps=47 15003s
+      chain 0 T=0.050 cur=3111 best=3111 acc=2119/340001 mass[B/R/P1/Q1/W/S]=9/38/18/10/12/13
+      chain 1 T=0.100 cur=3119 best=3113 acc=2122/340001 mass[B/R/P1/Q1/W/S]=25/23/12/18/12/10
+      chain 2 T=0.200 cur=3122 best=3115 acc=2379/340001 mass[B/R/P1/Q1/W/S]=10/18/12/20/18/22
+      chain 3 T=0.500 cur=3126 best=3120 acc=7049/340001 mass[B/R/P1/Q1/W/S]=47/6/29/6/6/6
+      chain 4 T=1.000 cur=3151 best=3132 acc=16330/340001 mass[B/R/P1/Q1/W/S]=38/16/31/5/5/5
+    [AUTO-EXTEND seed 3] 350000 -> 400000
+    [SA seed 3] iter=350000 global_best=3107 rescues=185 pt_swaps=47 15451s
+      chain 0 T=0.050 cur=3107 best=3107 acc=2151/350001 mass[B/R/P1/Q1/W/S]=9/38/18/10/12/13
+      chain 1 T=0.100 cur=3119 best=3113 acc=2159/350001 mass[B/R/P1/Q1/W/S]=25/23/12/18/12/10
+      chain 2 T=0.200 cur=3122 best=3115 acc=2394/350001 mass[B/R/P1/Q1/W/S]=10/18/12/20/18/22
+      chain 3 T=0.500 cur=3126 best=3120 acc=7247/350001 mass[B/R/P1/Q1/W/S]=47/6/29/6/6/6
+      chain 4 T=1.000 cur=3151 best=3132 acc=16850/350001 mass[B/R/P1/Q1/W/S]=38/16/31/5/5/5
+    [SA seed 3] iter=360000 global_best=3107 rescues=190 pt_swaps=47 15892s
+      chain 0 T=0.050 cur=3107 best=3107 acc=2183/360001 mass[B/R/P1/Q1/W/S]=25/6/12/21/19/17
+      chain 1 T=0.100 cur=3119 best=3113 acc=2192/360001 mass[B/R/P1/Q1/W/S]=10/11/20/13/20/26
+      chain 2 T=0.200 cur=3122 best=3115 acc=2425/360001 mass[B/R/P1/Q1/W/S]=21/12/34/11/12/10
+      chain 3 T=0.500 cur=3127 best=3120 acc=7482/360001 mass[B/R/P1/Q1/W/S]=32/8/36/8/8/8
+      chain 4 T=1.000 cur=3154 best=3132 acc=17335/360001 mass[B/R/P1/Q1/W/S]=36/14/35/5/5/5
+    [SA seed 3] iter=370000 global_best=3107 rescues=196 pt_swaps=47 16330s
+      chain 0 T=0.050 cur=3107 best=3107 acc=2212/370001 mass[B/R/P1/Q1/W/S]=25/6/12/21/19/17
+      chain 1 T=0.100 cur=3119 best=3113 acc=2216/370001 mass[B/R/P1/Q1/W/S]=10/11/20/13/20/26
+      chain 2 T=0.200 cur=3122 best=3115 acc=2482/370001 mass[B/R/P1/Q1/W/S]=21/12/34/11/12/10
+      chain 3 T=0.500 cur=3125 best=3120 acc=7678/370001 mass[B/R/P1/Q1/W/S]=32/8/36/8/8/8
+      chain 4 T=1.000 cur=3172 best=3132 acc=17869/370001 mass[B/R/P1/Q1/W/S]=36/14/35/5/5/5
+    [SA seed 3] iter=380000 global_best=3107 rescues=203 pt_swaps=47 16774s
+      chain 0 T=0.050 cur=3107 best=3107 acc=2261/380001 mass[B/R/P1/Q1/W/S]=9/36/19/11/12/13
+      chain 1 T=0.100 cur=3119 best=3113 acc=2252/380001 mass[B/R/P1/Q1/W/S]=26/22/12/19/12/9
+      chain 2 T=0.200 cur=3122 best=3115 acc=2545/380001 mass[B/R/P1/Q1/W/S]=34/14/5/15/15/17
+      chain 3 T=0.500 cur=3127 best=3120 acc=7884/380001 mass[B/R/P1/Q1/W/S]=24/6/50/6/7/7
+      chain 4 T=1.000 cur=3169 best=3132 acc=18344/380001 mass[B/R/P1/Q1/W/S]=30/19/36/5/5/5
+    [SA seed 3] iter=390000 global_best=3107 rescues=210 pt_swaps=47 17226s
+      chain 0 T=0.050 cur=3107 best=3107 acc=2292/390001 mass[B/R/P1/Q1/W/S]=9/36/19/11/12/13
+      chain 1 T=0.100 cur=3119 best=3113 acc=2295/390001 mass[B/R/P1/Q1/W/S]=26/22/12/19/12/9
+      chain 2 T=0.200 cur=3122 best=3115 acc=2589/390001 mass[B/R/P1/Q1/W/S]=34/14/5/15/15/17
+      chain 3 T=0.500 cur=3128 best=3120 acc=8104/390001 mass[B/R/P1/Q1/W/S]=24/6/50/6/7/7
+      chain 4 T=1.000 cur=3165 best=3132 acc=18809/390001 mass[B/R/P1/Q1/W/S]=30/19/36/5/5/5
+  Phase 2 best=3107 (iters 400000, accepts 34854/2000000, PT 47, rescues 215, 17666s)
+  [Phase 5] Polish 50-pass (all 36 dims, no frozen)...
+  Polish best=3095 (Δ from SA=-12, 80s)
+  [Phase 6] D190 verify...
+  [D190 step 1] FINAL_VERIFY PASS (3095)
+  [D190 step 2] ROUNDTRIP PASS (togordo17_seed3_dump.txt)
+  [D190 step 3] STRUCTURAL PASS (frozen-check OMITTED — Engine 17 cold cross-genealogy)
+  D190 (steps 1-3): PASS
+  Seed 4 finished: audit=3095 (8.6 h)
+
+====================================================================
+  Engine 17 CAMPAIGN COMPLETE — runtime 33.00 h
+====================================================================
+  Per-seed results:
+  | seed | pre_sa | sa    | polish | d190 |
+  |------|--------|-------|--------|------|
+  |  1   | 3170   | 3115  | 3112   | PASS |
+  |  2   | 3174   | 3110  | 3106   | PASS |
+  |  3   | 3171   | 3115  | 3102   | PASS |
+  |  4   | 3175   | 3107  | 3095   | PASS |
+
+  Best seed: 4 with audit=3095 (dump: togordo17_seed3_dump.txt)
+  Δ vs JK_2008 (3196):  -101 (-3.16%)
+  Δ vs COMBO_3027:      68
+
+  Cold-start finds different (worse) basin — F_2 landscape data.
+  D190 step 4 (Python independent): DEFERRED. Run verify_F2_independent.py on best dump.
+====================================================================
+
+ENGINE17_FINAL: best_audit=3095 best_seed=4 delta_jk=-101 delta_combo=68
