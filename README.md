@@ -160,7 +160,7 @@ A machine-readable `CITATION.cff` is included.
 ## Contact
 
 For questions, corrections, or to share results derived from this work, please open a GitHub issue. Substantive disagreements and reproducibility reports are particularly welcome.
-
+ email: tretoef@gmail.com
 ---
 
 *Madrid, May 2026 — Cojones rectos.*
