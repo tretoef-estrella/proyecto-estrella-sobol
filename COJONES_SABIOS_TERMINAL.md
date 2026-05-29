@@ -302,7 +302,7 @@ Cojones puros, rectos y encerados. Esfuerzo máximo. Cero pereza. Esto es lo que
 
 ### Frozen slots {2, 3, 4, 5, 6, 7, 9, 16}
 
-**Origen empírico**: 4 records F_2 sub-3060 cruzados (TOGORDOBIENGORDOPARISI 3030, PARISI_PROBE 3042, TRIPLES_RESHUFFLE 3044, TOGORDO_v3 3051). Estos 8 slots tienen **idéntica config** en TODOS los records.
+**Origen empírico**: 4 records F_2 sub-3060 cruzados (TOGORDOBIENGORDO 3030, BIENGORDO_PROBE 3042, TRIPLES_RESHUFFLE 3044, TOGORDO_v3 3051). Estos 8 slots tienen **idéntica config** en TODOS los records.
 
 **Implicación operativa**: estos slots son congelados en Engine 13. NO se tocan. Move proposers excluyen esos slots del pool. `is_frozen(d)` retorna true para esos d.
 
@@ -372,7 +372,7 @@ Cojones puros, rectos y encerados. Esfuerzo máximo. Cero pereza. Esto es lo que
 | FLOOR_P10 | **1501** | Sum p10. Plausible target. |
 | FLOOR_AVG | **2359** | Random baseline. |
 
-**Récord vigente F_2**: 3027 (TOGORDOBIENGORDOPARISI lineage). Gap a FLOOR_P10 = +1526. Gap a FLOOR_ISOLATED = +2305.
+**Récord vigente F_2**: 3027 (TOGORDOBIENGORDO lineage). Gap a FLOOR_P10 = +1526. Gap a FLOOR_ISOLATED = +2305.
 
 **F60 v51 RATIFICADO**: cross-dim coupling productive perfora FLOOR_ISOLATED. Engine 7 cierre 700 = -22 below FLOOR_ISOLATED (era F_16 normalizada). **Empírico que cross-dim Move P (P3 cross-dim adjacent) ROMPE la isolation assumption del bound analítico**. Contribución teórica publicable independent del audit number: refuta la implicit assumption del standard QMC analytical lower bound calculations.
 
@@ -735,7 +735,7 @@ Sin los 5 elementos NO LAUNCH. Architect arbitra.
 
 **Sub-3027 NO alcanzado**. Cold-start cross-genealogy 4 seeds Engine 17 banda [3095, 3112]. Random init Engine 18 Sub-B 3186. Mejor of all engines campaign reabierta = **3095 (Engine 17 seed 4)**, +68 vs COMBO_3027.
 
-**COMBO_3027 confirmado récord vigente F_2** (18 abril 2026, lineage TOGORDOBIENGORDOPARISI post-FORENSIC). Δ=-169 vs JK_2008, -5.3%. D190 PASS (steps 1-3 sólido, step 4 redundancy).
+**COMBO_3027 confirmado récord vigente F_2** (18 abril 2026, lineage TOGORDOBIENGORDO post-FORENSIC). Δ=-169 vs JK_2008, -5.3%. D190 PASS (steps 1-3 sólido, step 4 redundancy).
 
 ### §18.2 — F86 v57 NEW BINDING — Basin diversity con Genz-perfiles especializados
 
