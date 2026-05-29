@@ -1,0 +1,96 @@
+Last login: Fri May 29 09:43:25 on ttys001
+rafa@MacBook-Air-de-RAFAEL Downloads % cd ~/Downloads && python3 compare_COMBO_rank_vs_boxcount.py
+=== COMBO cross-check: rank vs box-counting, m in [5,14] ===
+
+[Route A] rank-based partial audit ...
+   = 1333   [1.0s]
+
+[Route B] box-counting partial audit (qmcpy points) ...
+   = 1333   [47.3s]
+
+====================================================
+AGREE: both routes return 1333 over m in [5,14].
+The rank-based and equidistribution-based t-values agree on the
+COMBO dump. Independent cross-check PASS.
+rafa@MacBook-Air-de-RAFAEL Downloads % cd ~/Downloads && python3 genz_benchmark_COMBO_vs_JK.py TOGORDO_COMBO_v1_RECORD.txt new-joe-kuo-6.21201
+==============================================================================
+  Genz Benchmark — COMBO_3027 vs JK_2008
+  Functions: 6 Genz standard
+  Dimensions: [10, 20, 30]
+  N points per rep: 65536
+  Reps per (func, dim, sequence): 30
+  Reference truth: MC N=4194304
+==============================================================================
+
+[Parse] Loading dumps...
+  COMBO_3027: 37 dims loaded
+  JK_2008:    21201 dims loaded
+
+[Build] Sobol generators...
+  Built in 0.0s
+
+[Generate] Sobol sequences N=65536...
+  Generated in 1.0s
+
+[Run] dim=10
+  Oscillatory        d=10: COMBO=7.184e-03  JK=7.385e-03  ratio=0.973  ✓ COMBO
+  Product peak       d=10: COMBO=4.080e+05  JK=4.068e+05  ratio=1.003  ✗ JK   
+  Corner peak        d=10: COMBO=1.526e-05  JK=1.526e-05  ratio=1.000  ✓ COMBO
+  Gaussian           d=10: COMBO=6.664e-04  JK=6.651e-04  ratio=1.002  ✗ JK   
+  Continuous         d=10: COMBO=2.143e-04  JK=2.140e-04  ratio=1.002  ✗ JK   
+  Discontinuous      d=10: COMBO=2.512e+06  JK=2.541e+06  ratio=0.988  ✓ COMBO
+
+[Run] dim=20
+  Oscillatory        d=20: COMBO=1.925e-03  JK=2.400e-03  ratio=0.802  ✓ COMBO
+  Product peak       d=20: COMBO=1.549e+11  JK=1.681e+11  ratio=0.921  ✓ COMBO
+  Corner peak        d=20: COMBO=1.526e-05  JK=1.526e-05  ratio=1.000  ✗ JK   
+  Gaussian           d=20: COMBO=1.738e-06  JK=1.636e-06  ratio=1.062  ✗ JK   
+  Continuous         d=20: COMBO=2.730e-07  JK=2.536e-07  ratio=1.076  ✗ JK   
+  Discontinuous      d=20: COMBO=2.597e+15  JK=6.663e+14  ratio=3.898  ✗ JK   
+
+[Run] dim=30
+  Oscillatory        d=30: COMBO=2.038e-03  JK=2.504e-03  ratio=0.814  ✓ COMBO
+  Product peak       d=30: COMBO=1.147e+16  JK=2.613e+16  ratio=0.439  ✓ COMBO
+  Corner peak        d=30: COMBO=1.526e-05  JK=1.526e-05  ratio=1.000  ✗ JK   
+  Gaussian           d=30: COMBO=1.947e-08  JK=1.500e-08  ratio=1.298  ✗ JK   
+  Continuous         d=30: COMBO=7.296e-10  JK=5.215e-10  ratio=1.399  ✗ JK   
+  Discontinuous      d=30: COMBO=4.914e+23  JK=2.894e+23  ratio=1.698  ✗ JK   
+
+==============================================================================
+  SUMMARY
+==============================================================================
+
+  | Function          | dim |  COMBO error  |  JK error    | Ratio  | Winner |
+  |-------------------|-----|---------------|--------------|--------|--------|
+  | Oscillatory       |  10 | 7.184e-03    | 7.385e-03   | 0.973  | COMBO  |
+  | Oscillatory       |  20 | 1.925e-03    | 2.400e-03   | 0.802  | COMBO  |
+  | Oscillatory       |  30 | 2.038e-03    | 2.504e-03   | 0.814  | COMBO  |
+  | Product peak      |  10 | 4.080e+05    | 4.068e+05   | 1.003  | JK     |
+  | Product peak      |  20 | 1.549e+11    | 1.681e+11   | 0.921  | COMBO  |
+  | Product peak      |  30 | 1.147e+16    | 2.613e+16   | 0.439  | COMBO  |
+  | Corner peak       |  10 | 1.526e-05    | 1.526e-05   | 1.000  | COMBO  |
+  | Corner peak       |  20 | 1.526e-05    | 1.526e-05   | 1.000  | JK     |
+  | Corner peak       |  30 | 1.526e-05    | 1.526e-05   | 1.000  | JK     |
+  | Gaussian          |  10 | 6.664e-04    | 6.651e-04   | 1.002  | JK     |
+  | Gaussian          |  20 | 1.738e-06    | 1.636e-06   | 1.062  | JK     |
+  | Gaussian          |  30 | 1.947e-08    | 1.500e-08   | 1.298  | JK     |
+  | Continuous        |  10 | 2.143e-04    | 2.140e-04   | 1.002  | JK     |
+  | Continuous        |  20 | 2.730e-07    | 2.536e-07   | 1.076  | JK     |
+  | Continuous        |  30 | 7.296e-10    | 5.215e-10   | 1.399  | JK     |
+  | Discontinuous     |  10 | 2.512e+06    | 2.541e+06   | 0.988  | COMBO  |
+  | Discontinuous     |  20 | 2.597e+15    | 6.663e+14   | 3.898  | JK     |
+  | Discontinuous     |  30 | 4.914e+23    | 2.894e+23   | 1.698  | JK     |
+
+  COMBO_3027 wins: 7 / 18 (38.9%)
+
+==============================================================================
+  F75 DUAL-FORM TEST
+==============================================================================
+  COMBO_3027 wins only 7/18 (<50%).
+  → F_2 audit improvement DOES NOT translate to Genz error reduction.
+  → F75 v52 dual-form RATIFIED: F_2 audit and F_2 Genz error NOT monotonically related.
+  → Practitioner-relevance NOT RATIFIED. Record audit-metric only.
+==============================================================================
+
+Total runtime: 604.5s
+rafa@MacBook-Air-de-RAFAEL Downloads % 
