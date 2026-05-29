@@ -1,0 +1,99 @@
+<svg viewBox="0 0 920 560" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c3e50" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#2c3e50" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="920" height="560" fill="#ffffff"/>
+
+  <!-- title -->
+  <text x="60" y="48" font-size="23" fill="#1a1a1a" font-weight="bold">The descent that led nowhere — and the way back</text>
+  <text x="60" y="74" font-size="14" fill="#666" font-style="italic">Joe-Kuo Table 3.6 audit value across finite fields. Lower is better. The baseline is 3196.</text>
+
+  <!-- axes -->
+  <line x1="120" y1="110" x2="120" y2="430" stroke="#999" stroke-width="1"/>
+  <line x1="120" y1="430" x2="720" y2="430" stroke="#999" stroke-width="1"/>
+
+  <!-- y gridlines + labels -->
+  <g font-size="11" fill="#999">
+    <line x1="120" y1="130" x2="720" y2="130" stroke="#eee"/>
+    <text x="112" y="134" text-anchor="end">4541</text>
+    <line x1="120" y1="180" x2="720" y2="180" stroke="#eee"/>
+    <text x="112" y="184" text-anchor="end">3196</text>
+    <line x1="120" y1="430" x2="720" y2="430" stroke="#eee"/>
+    <text x="112" y="434" text-anchor="end">0</text>
+  </g>
+  <text x="60" y="270" font-size="12" fill="#666" transform="rotate(-90 60 270)" text-anchor="middle">audit value (GF(2)-relevant scale)</text>
+
+  <!-- baseline JK reference line -->
+  <line x1="120" y1="180" x2="720" y2="180" stroke="#2c3e50" stroke-width="1.4" stroke-dasharray="6 4"/>
+  <text x="724" y="184" font-size="12" fill="#2c3e50">JK 2008 baseline (3196)</text>
+
+  <!-- the staircase down: points at GF(4..64). y mapped so 4541->130, 0->430; scale = 300/4541 = 0.06606; y = 430 - audit*0.06606 -->
+  <!-- GF(4) 1711 -> 430-113=317 ; GF(8) 996 -> 430-66=364 ; GF(16) 672 -> 430-44=386 ; GF(32) 547 -> 430-36=394 ; GF(64) 414 -> 430-27=403 -->
+  <!-- x positions -->
+  <g>
+    <!-- descending connecting line -->
+    <polyline points="180,317 290,364 400,386 510,394 620,403" fill="none" stroke="#27708a" stroke-width="2.4"/>
+    <!-- area under -->
+    <polygon points="180,317 290,364 400,386 510,394 620,403 620,430 180,430" fill="url(#fade)"/>
+
+    <!-- points -->
+    <g fill="#27708a">
+      <circle cx="180" cy="317" r="6"/>
+      <circle cx="290" cy="364" r="6"/>
+      <circle cx="400" cy="386" r="6"/>
+      <circle cx="510" cy="394" r="6"/>
+      <circle cx="620" cy="403" r="7" stroke="#1a4a5c" stroke-width="2"/>
+    </g>
+
+    <!-- value labels -->
+    <g font-size="13" fill="#1a4a5c" font-weight="bold" text-anchor="middle">
+      <text x="180" y="305">1711</text>
+      <text x="290" y="352">996</text>
+      <text x="400" y="374">672</text>
+      <text x="510" y="382">547</text>
+      <text x="620" y="391">414</text>
+    </g>
+    <!-- field labels -->
+    <g font-size="12" fill="#555" text-anchor="middle">
+      <text x="180" y="450">GF(4)</text>
+      <text x="290" y="450">GF(8)</text>
+      <text x="400" y="450">GF(16)</text>
+      <text x="510" y="450">GF(32)</text>
+      <text x="620" y="450">GF(64)</text>
+    </g>
+    <!-- pct labels small -->
+    <g font-size="10" fill="#888" text-anchor="middle">
+      <text x="180" y="466">−46%</text>
+      <text x="290" y="466">−69%</text>
+      <text x="400" y="466">−79%</text>
+      <text x="510" y="466">−83%</text>
+      <text x="620" y="466">−87%</text>
+    </g>
+  </g>
+
+  <!-- the return: red arrow from GF(64) 414 up to 4541 when lifted back to GF(2) -->
+  <path d="M 628,400 C 690,360 700,200 700,138" fill="none" stroke="#c0392b" stroke-width="2.4" marker-end="url(#arrowRed)" stroke-dasharray="2 0"/>
+  <circle cx="700" cy="130" r="7" fill="#c0392b"/>
+  <text x="712" y="126" font-size="13" fill="#c0392b" font-weight="bold">4541</text>
+  <text x="712" y="143" font-size="11" fill="#c0392b">+42% vs baseline</text>
+
+  <!-- annotation for the return -->
+  <text x="540" y="280" font-size="12.5" fill="#c0392b" font-style="italic">lifted back to GF(2)</text>
+  <text x="540" y="297" font-size="12.5" fill="#c0392b" font-style="italic">— the only field real</text>
+  <text x="540" y="314" font-size="12.5" fill="#c0392b" font-style="italic">software uses</text>
+
+  <!-- caption block -->
+  <g>
+    <line x1="120" y1="500" x2="720" y2="500" stroke="#eee"/>
+    <text x="120" y="522" font-size="12.5" fill="#444">Each larger field gave a lower audit value — down to 414 in GF(64), 87% below the eighteen-year baseline.</text>
+    <text x="120" y="540" font-size="12.5" fill="#444">But translated back to GF(2), where every QMC library lives, that 414 becomes 4541: worse than where it started.</text>
+  </g>
+</svg>
