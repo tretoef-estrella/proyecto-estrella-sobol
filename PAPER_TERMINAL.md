@@ -51,7 +51,7 @@ This v44 is a lossless-information compression of v43 (8108 lines → ~3500). Co
 | GF(4) | DEFROST_PROBE_4_6 | 1978 | 22 Apr 2026 | ✓ | — |
 | GF(4) | TOGORDO_GF4_v2_CLEAN | 2108 | 22 Apr 2026 | ✓ | — |
 | GF(4) | TOGORDO_GF4_v1 | 2817 | 21 Apr 2026 | ✓ | 413s |
-| GF(2) | TOGORDOBIENGORDOPARISI | 3030 | 19 Apr 2026 | ✓ | — |
+| GF(2) | TOGORDOBIENGORDO | 3030 | 19 Apr 2026 | ✓ | — |
 | GF(2) | (post-FORENSIC engines) | 3027 | 20 Apr 2026 | ✓ | — |
 | **JK 2008 baseline** | (Joe & Kuo) | **3196** | 2008 | published | — |
 
@@ -232,7 +232,7 @@ Each entry: what was tried, what happened, why closed. Preserved for historical 
 - **TOGORDO_v13 Phase B** (single-slot deg-8 substitution within GF(4)): 80 (slot, poly) combinations, 0 hits. **D122 binding**: deg-8 single-slot context-3044 saturated. Closed.
 - **HC_FINAL_v1**: 18-slot deterministic HC from 3044 + 2 passes, 0 improvements. 752s. Closed.
 - **HILLCLIMB_v1**: 4 chains × 15K iters each from 3030. Plateau width ~100 states/chain. Closed (basin width characterized).
-- **RESTART_EXPERIMENT_v1**: same scientific question as PARISI. Replaced. Closed.
+- **RESTART_EXPERIMENT_v1**: same scientific question as BIENGORDO. Replaced. Closed.
 - **Polyswap-within-8 bug** (v22): effective rate 0.05% vs target 0.28% due to invalid-target rejection. Bug fix preserved. Closed.
 
 ### GF(4) era dead-ends
@@ -2866,7 +2866,7 @@ Polish Pass 2+ NOT EXECUTED (architect terminated post-Genz-bench)
 
 **F74 NEW**: Cost ratio per-eval F_32→F_64 = 0.93× (NOT 1.86× as constructor v51 predicted pre-build, NOT 7× as constructor v51 invented mid-run). Real wall-clock ratio per-pass = 1.92× = 0.93× per-eval × 2.06× more evals (alt vals 31→63 expansion). Tabla MUL F_64 4096 entries (4KB) cabe trivial L1 cache M2 perf core (192KB L1d). Constructor v51 jubilated for inventing Pre-SA Pass 1 wall-clock engine 9 = "50-70 min" when log officially recorded 232.8 min — number-from-files-only discipline violated.
 
-**F75 NEW** (CRITICAL — meta-finding): F_q t-values and F_2 t-values are NOT monotonically related across digital nets. TRINCANERO 414 (F_64 audit) Kronecker-lifted via canonical regular representation = 4541 F_2 t-value (42% WORSE than JK 3196). Empirically confirmed via Genz integration tests d∈{10,20,30}: JK wins 11-12/15 cells, integration error 4×-85× worse for TRINC. Implication: F_q optimization track records (engines 6/7/8/9/11 F_4/F_8/F_16/F_32/F_64 = 1695/700/672/547/414) are mathematically valid records WITHIN their respective fields but DO NOT translate to QMC integration utility when matrices are lifted to F_2 for use in standard QMC software (scipy, BoTorch, QuantLib, NAG, MATLAB QRNG). The F_q optimization track is a legitimate mathematical exploration of digital net theory in higher-cardinality fields — specialised research target — but its records are NOT interchangeable with the practitioner-relevant F_2 metric. The project F_2 record 3027 (TOGORDOBIENGORDOPARISI lineage 19-20 April 2026) remains the only practitioner-relevant project record (-169 vs JK 3196 = -5.3% improvement, real and publishable on the metric that governs integration error in standard software).
+**F75 NEW** (CRITICAL — meta-finding): F_q t-values and F_2 t-values are NOT monotonically related across digital nets. TRINCANERO 414 (F_64 audit) Kronecker-lifted via canonical regular representation = 4541 F_2 t-value (42% WORSE than JK 3196). Empirically confirmed via Genz integration tests d∈{10,20,30}: JK wins 11-12/15 cells, integration error 4×-85× worse for TRINC. Implication: F_q optimization track records (engines 6/7/8/9/11 F_4/F_8/F_16/F_32/F_64 = 1695/700/672/547/414) are mathematically valid records WITHIN their respective fields but DO NOT translate to QMC integration utility when matrices are lifted to F_2 for use in standard QMC software (scipy, BoTorch, QuantLib, NAG, MATLAB QRNG). The F_q optimization track is a legitimate mathematical exploration of digital net theory in higher-cardinality fields — specialised research target — but its records are NOT interchangeable with the practitioner-relevant F_2 metric. The project F_2 record 3027 (TOGORDOBIENGORDO lineage 19-20 April 2026) remains the only practitioner-relevant project record (-169 vs JK 3196 = -5.3% improvement, real and publishable on the metric that governs integration error in standard software).
 
 ## §207. v52 directives narrative — D211-D219 — NEW v52
 
@@ -2886,7 +2886,7 @@ Polish Pass 2+ NOT EXECUTED (architect terminated post-Genz-bench)
 
 **D218 NEW**: F_q optimization track DECLARED CLOSED for this project's practitioner-impact mainline. Records F_4/F_8/F_16/F_32/F_64 (1695/700/672/547/414) preserved as mathematical contributions to Niederreiter F_q digital net theory but NOT pursued further in this campaign. Future engines target F_2 native baseline 3027 with full F_q lessons integrated.
 
-**D219 NEW (architect ruling 8 May 2026)**: PIVOT BACK TO F_2. Project main attack returns to F_2 (GF(2)) starting from project F_2 record 3027 (TOGORDOBIENGORDOPARISI lineage). All techniques learned during F_4/F_8/F_16/F_32/F_64 era — F47 cross-substrate-cold (replication F_2-domain-fresh-attempt), Move Q coupling (F_2-equivalent if any constructible), triple-rescue cascadas, T3 atomicity F_2 verdict, MIX_RECAL runtime, decision matrix runtime, AUTO-EXTEND laxo D215, full SA chain architecture from F_64 era refined — to be applied. Engine 12 spec ratificable v53. Target: beat F_2 record 3027, head toward JK 3196 from below. Practitioner-relevant. Genz benchmark mandatory at cierre per D217.
+**D219 NEW (architect ruling 8 May 2026)**: PIVOT BACK TO F_2. Project main attack returns to F_2 (GF(2)) starting from project F_2 record 3027 (TOGORDOBIENGORDO lineage). All techniques learned during F_4/F_8/F_16/F_32/F_64 era — F47 cross-substrate-cold (replication F_2-domain-fresh-attempt), Move Q coupling (F_2-equivalent if any constructible), triple-rescue cascadas, T3 atomicity F_2 verdict, MIX_RECAL runtime, decision matrix runtime, AUTO-EXTEND laxo D215, full SA chain architecture from F_64 era refined — to be applied. Engine 12 spec ratificable v53. Target: beat F_2 record 3027, head toward JK 3196 from below. Practitioner-relevant. Genz benchmark mandatory at cierre per D217.
 
 ## §208. F_2 attack — engine 12 preliminary architecture — NEW v52
 
@@ -2894,7 +2894,7 @@ Polish Pass 2+ NOT EXECUTED (architect terminated post-Genz-bench)
 
 **Substrate**: F_2 = GF(2). Native binary digital net.
 
-**Starting point**: F_2 project record 3027 (TOGORDOBIENGORDOPARISI lineage 19-20 April 2026, post-FORENSIC saturation).
+**Starting point**: F_2 project record 3027 (TOGORDOBIENGORDO lineage 19-20 April 2026, post-FORENSIC saturation).
 
 **Hypothesis to test**: F_2 was declared saturated April 2026 BEFORE the F_q lessons were learned. Re-attacking F_2 with full lessons (cross-substrate-cold replication F_2-fresh-attempt, full move set inheritance evolved through F_64, AUTO-EXTEND laxo, triple-rescue cascadas, decision matrix runtime, MIX_RECAL evolved cadence) may break the F_2 saturation declared 3027.
 
@@ -2918,7 +2918,7 @@ Polish Pass 2+ NOT EXECUTED (architect terminated post-Genz-bench)
 
 | Field | Engine | Record | D190 status | Wall-clock | Notes |
 |---|---|---|---|---|---|
-| F_2 (GF(2)) | TOGORDOBIENGORDOPARISI lineage | 3027 | declared saturated 19-20 Apr 2026 | — | Project F_2 baseline. -169 vs JK 3196 = -5.3%. Practitioner-relevant. |
+| F_2 (GF(2)) | TOGORDOBIENGORDO lineage | 3027 | declared saturated 19-20 Apr 2026 | — | Project F_2 baseline. -169 vs JK 3196 = -5.3%. Practitioner-relevant. |
 | F_4 (GF(4)) | UNREO 1695 | 1695 | ✓ | — | F_q track, NOT JK-comparable |
 | F_8 | SANGORDOR engine 6 | 996 | ✓ | — | F_q track, NOT JK-comparable |
 | F_16 | engine 7 cold | 700 | ✓ | — | F_q track, NOT JK-comparable |
@@ -2942,7 +2942,7 @@ Polish Pass 2+ NOT EXECUTED (architect terminated post-Genz-bench)
 Auditor v47 inflated mid-conversation 8 May 2026 the magnitude of project F_2-direct vs JK comparison. Specifically claimed "HUEVOS1666 1666 vs JK 3196 = -47.9%" when in fact:
 - "1666" was the architect target embedded in engine name TOGORDOESPORMISHUEVOS1666 (saga F_4)
 - The engine closed at audit 1711 (F_4 native, NOT F_2)
-- The actual project F_2-direct record is 3027 (TOGORDOBIENGORDOPARISI lineage)
+- The actual project F_2-direct record is 3027 (TOGORDOBIENGORDO lineage)
 - F_2-direct vs JK = -169 pts = -5.3% (not -47.9%)
 
 Memory-from-files violated, same discipline that jubilated constructor v51 (D213). Self-rectification documented v52. No jubilation of auditor v47 by architect ruling (auditor v47 self-cazada and corrected within same conversation, magnitude of error smaller than constructor v51 case which built alarmist run-termination proposal on inflated number).
@@ -3038,7 +3038,7 @@ Pre-launch probe N+K executed. Probe results valid. Mass set per probe:
 | FLOOR_P10 | **1501** | Sum of 10th percentiles. Plausible target. |
 | FLOOR_AVG | **2359** | Random baseline. |
 
-**Project F_2 record vigente**: 3027 (TOGORDOBIENGORDOPARISI lineage 19-20 April 2026). Gap to FLOOR_P10 = +1526. Gap to FLOOR_ISOLATED = +2305 (incommunicable, theoretical max).
+**Project F_2 record vigente**: 3027 (TOGORDOBIENGORDO lineage 19-20 April 2026). Gap to FLOOR_P10 = +1526. Gap to FLOOR_ISOLATED = +2305 (incommunicable, theoretical max).
 
 **Suelo plausible cojonudo (PMC realista with X-high effort)**: rango **1500-2200** (−31% to −53% over JK 2008). This is what the project defends as realistic floor.
 
@@ -3280,7 +3280,7 @@ Constructor v52 JUBILATED end-to-end (engine 12 v52 + v53 patched, both with cri
 
 ## §222. F_2 basin 3027 characterization — empirical complete — NEW v54
 
-After Engines 13 v1 + 13 v2 + 14 + 15 + 16 = ~9 hours M2 single-thread, the basin 3027 (TOGORDOBIENGORDOPARISI lineage, post-FORENSIC) has been characterized empirically over the canonical Joe-Kuo Table 3.6 audit subspace:
+After Engines 13 v1 + 13 v2 + 14 + 15 + 16 = ~9 hours M2 single-thread, the basin 3027 (TOGORDOBIENGORDO lineage, post-FORENSIC) has been characterized empirically over the canonical Joe-Kuo Table 3.6 audit subspace:
 
 | Subspace dimension explored | Engine | Proposals | Result |
 |---|---|---|---|
@@ -3483,7 +3483,7 @@ Lo único que difiere es **bit-packing direction** (LSB-first columnar en Python
 RECORD (current): 3044 (3044, JK baseline 3196, v3 3051)
 ```
 
-Archive cronológicamente PRE-TOGORDOBIENGORDOPARISI (3030 → 3027 abril 2026). Los gaps citados en cojones sabios v3 §8 y paper v54 §222 (`+1526` a P10, `+2305` a FLOOR_ISOLATED, etc.) son **recalculados con record=3027**, NO contenido del archive.
+Archive cronológicamente PRE-TOGORDOBIENGORDO (3030 → 3027 abril 2026). Los gaps citados en cojones sabios v3 §8 y paper v54 §222 (`+1526` a P10, `+2305` a FLOOR_ISOLATED, etc.) son **recalculados con record=3027**, NO contenido del archive.
 
 D44/D81 binding obliga "numbers from files only". Quien cite "+1526 a P10" está implícitamente recalculando, no leyendo del file.
 
