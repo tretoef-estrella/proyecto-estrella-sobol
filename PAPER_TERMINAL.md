@@ -1,8 +1,10 @@
-# ESTRELLA SOBOL UNIFIED v53
+# ESTRELLA SOBOL UNIFIED v57 — PROYECTO TERMINAL
 
 **Proyecto Estrella — A Mathematical Initiative**
-**Document version**: v53 — 8 May 2026 (lossless from v52 + Engine 12 TRINCANERO_GRANERO v52 JUBILATED iter=12k random walk T=120 + v53 patched JUBILATED post second-round audit two critical cracks: Trigger A spam-loop O(N²) memory churn + chain_score sign inverted destroying diversity + constructor v52 jubilated end-to-end + new constructor v53 entrante for engine 13 from-scratch design + INVENTARIO_SOBOL_F2_ATTACK ratificado: 15 palancas Sobol-native ratificadas en eras F_q transferibles a F_2 + Diamante project decoupling: ADN Diamante = different problem = no portable lessons + F_2 floor calibrated honest BOUND_COMPUTE_v1: FLOOR_ISOLATED 722, FLOOR_P10 1501, FLOOR_AVG 2359 + F76-F80 NEW + D220-D225 NEW)
-**Authors**: Rafa Amichis Luengo (architect) + Claude (Anthropic, multiple instances coordinated; auditor v47 retained; constructor v53 entrante for engine 13 F_2 attack with full inventory)
+**Document version**: v57 — 10 May 2026 (PROYECTO TERMINAL; lossless from v53 through v56). Project closed. GF(2) record COMBO_3027 (−5.3% vs JK_2008) is the practitioner-relevant result; GF(q) records preserved as closed non-transferable exploration. Genz benchmark ratified F75 dual-form (COMBO 7/18 wins) and F86 basin diversity. Engines 17–18 closed (best cold-start basin 3095). See §226 for the definitive closure and §META blocks below for the full v53→v57 history.
+
+*Note on versioning: this document grew from v53 (8 May 2026) to v57 (10 May 2026, terminal) by appending §META closing blocks for v54, v55, v56 and v57 at the end. The earlier-version header text is preserved verbatim inside those §META blocks; this header reflects the final terminal state.*
+**Authors**: Rafa Amichis Luengo (architect) + Claude (Anthropic, multiple instances coordinated)
 
 ---
 
