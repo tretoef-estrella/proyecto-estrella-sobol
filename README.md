@@ -1,34 +1,66 @@
 # Proyecto Estrella · Sobol Campaign
 
-**First ratified improvement over Joe-Kuo (2008) Table 3.6 audit metric in 18 years, with empirical refutation of the single-basin-optimum assumption in F₂ Sobol direction numbers.**
+**The first ratified improvement over the Joe-Kuo (2008) Table 3.6 audit metric in 18 years — and an empirical refutation of the single-basin-optimum assumption in F₂ Sobol direction numbers.**
 
 **Author**: Rafael Amichis Luengo (Madrid) · **Date**: May 2026 · **Status**: closed project, open dataset · **License**: MIT
 
 ---
 
-## TL;DR
+## What this is, in one breath
 
-Sobol' quasi-Monte Carlo sequences are the most widely deployed low-discrepancy sequences in industry: scipy, BoTorch, MATLAB QRNG, NAG, QuantLib, computer graphics, machine learning, computational finance. Their quality depends on a set of **direction numbers**, and the de facto standard for the last 18 years has been the Joe & Kuo (2008) construction.
+Sobol' quasi-Monte Carlo sequences are the most widely deployed low-discrepancy sequences in industry — scipy, BoTorch, MATLAB QRNG, NAG, QuantLib, computer graphics, machine learning, computational finance. Their quality is governed entirely by a set of **direction numbers**, and the de facto standard for the last eighteen years has been the Joe & Kuo (2008) construction. Nobody had published a ratified improvement on its own audit metric since.
 
-This project delivers two contributions:
+This project did, on a MacBook Air. It is the record of one psychologist, a single M2 chip running at 25% of one core, and a few dozen search engines with deliberately ridiculous names, doing what eighteen years of the field had not — and then, with the same engines, discovering *why the whole enterprise is subtler than it looks*.
 
-1. **A reproducible record on the Joe-Kuo Table 3.6 audit metric**: `COMBO_3027` (audit = 3027), a **−5.3 % improvement** over the published Joe-Kuo (2008) baseline (audit = 3196), verified byte-exact via an independent Python re-implementation of the audit recurrence.
+Two contributions came out of it:
 
-2. **A finding that refutes a standard implicit assumption in QMC literature**: the F₂ audit subspace contains *multiple* sub-baseline basins with **functionally specialised Genz integration error profiles**, not a single audit-optimum. A practitioner should pick direction numbers by integrand family, not by audit number alone (see [`MAIN_DISCOVERIES.md`](MAIN_DISCOVERIES.md)).
+1. **A reproducible record**: `COMBO_3027` (audit = 3027), a **−5.3 % improvement** over the published Joe-Kuo baseline (audit = 3196), re-derivable byte-exact from a clean-room Python re-implementation of the audit recurrence.
 
-The full optimisation pipeline (6 C++ search engines, incremental audit cache with rollback, parallel-tempering simulated annealing, empirical productivity probes, quadruple-verify protocol) and every dump and log used to produce the record are included in this repository so anybody can reproduce, audit, and extend.
+2. **A finding that refutes a standard implicit assumption**: the F₂ audit subspace does *not* contain a single audit-optimum. It contains **multiple sub-baseline basins with functionally specialised integration-error profiles**. The right direction numbers depend on the *shape of your integrand*, not on the audit number alone. (Full statement in [`MAIN_DISCOVERIES.md`](MAIN_DISCOVERIES.md).)
+
+The entire pipeline — six C++ search engines, an incremental audit cache with rollback, parallel-tempering simulated annealing, empirical move-productivity probes, a quadruple-verify protocol — and every dump and log used to produce the record are in this repository, so anybody can reproduce, audit, and extend.
+
+---
+
+## The detour that taught the lesson: a walk down a road no one travels
+
+Before the record came a long, deliberate descent through fields nobody else was searching — and the most important scientific result of the project came from finding out, the hard way, that it was the wrong mountain.
+
+The Joe-Kuo construction lives over **GF(2)** — the binary field. The natural conjecture, the one any optimiser would reach for, was: *if the binary field is so cramped, go to a bigger field. More room, more freedom, lower numbers.* So the campaign climbed. GF(4), GF(8), GF(16), GF(32), GF(64). New kernel for each, new arithmetic, new everything, all taught from scratch by someone who had never opened a coding-theory textbook.
+
+And the numbers fell. Spectacularly. Each field was a new descent, each engine a multi-day run on the M2:
+
+| Field | Best engine | Audit | vs JK_2008 | M2 wall-clock |
+|---|---|---:|---:|---:|
+| GF(4) | TOGORDOESPORMISHUEVOS1666 | 1711 | −46 % | 387 min |
+| GF(8) | SANGORDORTOGORDOLETALPMC | 996 | −69 % | 18.3 h |
+| GF(16) | TOGORDOESELMASGORDOYADEMASELREYMASGORDO | 672 | −79 % | 24.0 h |
+| GF(32) | TOGORDOELGRANGRASIENTOESELREYQUEGANALENTO | 547 | −83 % | 44.7 h |
+| GF(64) | TRINCANERO (engine 11) | 414 | −87 % | — |
+
+Eighty-seven percent below the eighteen-year baseline. Weeks of work. Engines that ran for two full days each. A number that, on its face, looked like a demolition of the state of the art.
+
+Then the only honest question left was asked: **does this actually help anyone integrate anything faster?** To answer it, the GF(64) record was lifted back to GF(2) via the canonical regular representation of the field — the form any real software (scipy, QuantLib, BoTorch) would actually need — and benchmarked on the Genz integration test functions against plain Joe-Kuo.
+
+The answer was no. Lifted to GF(2), the celebrated `414` becomes a GF(2) t-value of **4541 — forty-two percent *worse* than Joe-Kuo**. On standard Genz integrals the lifted matrices lost 11–12 of 15 cells, with integration error 4× to 85× worse. The field records were mathematically real **inside their own fields**, and worthless to a practitioner outside them. **GF(q) and GF(2) t-values are not monotonically related** — driving one down says nothing reliable about the other.
+
+That is the finding. Not a footnote, the centre of gravity. The descent to `414` was a beautifully optimised walk down a path that leads nowhere anyone needs to go, because no working QMC code lives in GF(64), and the bridge back to GF(2) destroys exactly the structure that was optimised. The record was a postcard from a country with no roads in.
+
+So the project closed the GF(q) track honestly — the five field records are preserved here as a legitimate, self-contained exploration of higher-cardinality digital-net theory, clearly labelled as *not* practitioner-relevant — turned around, and walked back to GF(2) to attack the only metric that governs real integration error, this time carrying every lesson the detour had paid for. That return is where `COMBO_3027` and the basin-diversity finding live.
+
+The errors are not hidden in this repository. They are the load-bearing structure. The wrong mountain is what made the right map readable.
 
 ---
 
 ## The record at a glance
 
-| Construction | Audit (Joe-Kuo Table 3.6) | Δ vs JK_2008 | Genz wins vs JK (6 fns × 3 dims) | Specialisation |
+| Construction | Audit (JK Table 3.6) | Δ vs JK_2008 | Genz wins (6 fns × 3 dims) | Best for |
 |---|---:|---:|---:|---|
 | **JK_2008** (Joe & Kuo, 2008) | 3196 | — | (baseline) | continuous, corner-peak |
-| **COMBO_3027** (this work, project record) | **3027** | **−5.3 %** | **7 / 18** | oscillatory, product-peak (dim ≥ 20) |
-| **E17_seed4_3095** (this work, alternative basin) | 3095 | −3.16 % | 6 / 18 | **Gaussian dim ≥ 20** |
+| **COMBO_3027** (project record) | **3027** | **−5.3 %** | **7 / 18** | oscillatory, product-peak (dim ≥ 20) |
+| **E17_seed4_3095** (alternative basin) | 3095 | −3.16 % | 6 / 18 | **Gaussian, dim ≥ 20** |
 
-All three constructions are included as plain-text dumps (`*_RECORD.txt`) and can be re-verified in seconds by any third party with the supplied Python verifier.
+All three are included as plain-text dumps and re-verified in seconds with the supplied Python verifier. No single one of them dominates Joe-Kuo across every integrand family — that non-domination *is* the second contribution.
 
 ---
 
@@ -37,36 +69,35 @@ All three constructions are included as plain-text dumps (`*_RECORD.txt`) and ca
 Requirements: Python 3.9+, `numpy`, `scipy`, `qmcpy 2.2+`.
 
 ```bash
-# Clone
-git clone https://github.com/<your-username>/proyecto-estrella-sobol
+git clone https://github.com/tretoef-estrella/proyecto-estrella-sobol
 cd proyecto-estrella-sobol
 
-# Verify the project record (audit = 3027)
+# Re-derive the project record (audit = 3027)
 python3 verify_F2_independent.py TOGORDO_COMBO_v1_RECORD.txt
 # → Expected: audit = 3027
 
-# Verify the Joe-Kuo (2008) baseline (audit = 3196)
+# Re-derive the Joe-Kuo (2008) baseline (audit = 3196)
 python3 verify_F2_independent.py new-joe-kuo-6.21201
 # → Expected: audit = 3196
 
-# Genz integration error benchmark (~5 minutes, single thread)
+# Genz integration-error benchmark (~5 min, single thread)
 python3 genz_benchmark_COMBO_vs_JK.py TOGORDO_COMBO_v1_RECORD.txt new-joe-kuo-6.21201
 # → Expected: COMBO_3027 wins 7/18 cells, family-specialised
 ```
 
-That's it — three commands, byte-exact verification, no special hardware.
+**A note on verification rigour, stated plainly.** `verify_F2_independent.py` is a **redundancy verifier**, not a fully independent one. It is a clean-room re-implementation in a different language with the opposite bit-packing direction, and it catches the entire class of *implementation* bugs (dump parsing, off-by-one in `compute_dn`, indexing). It does **not** constitute mathematical independence: it shares the Joe-Kuo `m_k` recurrence, the MSB-first coefficient decoding, and the Niederreiter rank predicate with the C++ kernel, so it cannot catch a *specification* error common to both. This is sufficient for the project-internal verification used here. A genuinely independent verifier — re-deriving the t-value cell-by-cell via `qmcpy` cross-validation — is the documented next step for anyone taking the record to formal peer review (`COJONES_SABIOS_TERMINAL.md` §K6, ~2–4 h of work). The record is honest about the rigour it has and the rigour it does not yet have.
 
 ---
 
 ## How to use this work as a practitioner
 
-If your application has **oscillatory or product-peak integrands** (Fourier-domain methods, multiplicative-payoff financial pricing, physical simulations with rapid modes) and you work in dimension ≥ 20, **use `TOGORDO_COMBO_v1_RECORD.txt`** as your direction numbers in place of `new-joe-kuo-6.21201`.
+If your integrands are **oscillatory or product-peak** (Fourier-domain methods, multiplicative-payoff pricing, simulations with rapid modes) and you work in dimension ≥ 20, use `TOGORDO_COMBO_v1_RECORD.txt` in place of `new-joe-kuo-6.21201`.
 
-If your application has **Gaussian-type integrands in dim ≥ 20** (Bayesian posterior expectations, certain ML hyperparameter problems), **use `togordo17_seed3_dump.txt`** (audit = 3095, alternative basin).
+If your integrands are **Gaussian-type in dim ≥ 20** (Bayesian posterior expectations, certain ML hyperparameter problems), use `togordo17_seed3_dump.txt` (audit = 3095, the alternative basin).
 
-If your application has **smooth, continuous, or corner-peak integrands**, the canonical Joe-Kuo (2008) construction is still the best choice on this benchmark.
+If your integrands are **smooth, continuous, or corner-peak**, the canonical Joe-Kuo (2008) construction is still your best choice on this benchmark.
 
-See [`GUIDE_FOR_EVERYONE.md`](GUIDE_FOR_EVERYONE.md) for a plain-language tour of the project, including a worked example of loading any of the three direction-number sets into `scipy.stats.qmc.Sobol`.
+[`GUIDE_FOR_EVERYONE.md`](GUIDE_FOR_EVERYONE.md) walks through all of this in plain language, including a worked example of loading any of the three direction-number sets into `scipy.stats.qmc.Sobol`.
 
 ---
 
@@ -75,60 +106,58 @@ See [`GUIDE_FOR_EVERYONE.md`](GUIDE_FOR_EVERYONE.md) for a plain-language tour o
 All files live in the root. No nested folders.
 
 **Records (the direction numbers themselves):**
-- `TOGORDO_COMBO_v1_RECORD.txt` — the project record (audit = 3027), oscillatory / product-peak specialist · **included in this repository**
-- `togordo17_seed3_dump.txt` — alternative basin (audit = 3095), Gaussian dim ≥ 20 specialist · **see SUBMIT_INSTRUCTIONS.md — must be uploaded by the author from the M2 run output**
-- `new-joe-kuo-6_21201.md` — Joe-Kuo (2008) baseline reference (audit = 3196) · **included in this repository** (markdown wrapper with the first 37 dimensions; the full 21201-dim official file can be downloaded from https://web.maths.unsw.edu.au/~fkuo/sobol/ as `new-joe-kuo-6.21201`)
+- `TOGORDO_COMBO_v1_RECORD.txt` — the project record (audit = 3027), oscillatory / product-peak specialist · *included*
+- `togordo17_seed3_dump.txt` — alternative basin (audit = 3095), Gaussian dim ≥ 20 specialist · *included*
+- `new-joe-kuo-6_21201.md` — Joe-Kuo (2008) baseline (audit = 3196) · *included* (markdown wrapper, first 37 dimensions; the full 21201-dim official file is at https://web.maths.unsw.edu.au/~fkuo/sobol/ as `new-joe-kuo-6.21201`)
 
-**Verifiers (reproduce or check):**
-- `verify_F2_independent.py` — D190 step 4 redundancy verifier (Python, clean-room re-implementation)
-- `genz_benchmark_COMBO_vs_JK.py` — Genz benchmark, six integrand families, three dimensions, COMBO vs any baseline
+**Verifiers:**
+- `verify_F2_independent.py` — D190 step-4 redundancy verifier (clean-room Python; see the verification note above)
+- `genz_benchmark_COMBO_vs_JK.py` — Genz benchmark, six integrand families × three dimensions
 
 **C++ kernel (the engine):**
-- `ESTRELLA_GF2_KERNEL.h` — canonical F₂ audit metric kernel
-- `AUDIT_CACHE.h` — incremental cache with `CacheDiff` rollback (65× speedup, single-thread M2)
+- `ESTRELLA_GF2_KERNEL.h` — canonical F₂ audit-metric kernel
+- `AUDIT_CACHE.h` — incremental cache with `CacheDiff` rollback (65× speedup measured on single-thread M2)
 - `JK_BUILDER.h` — Joe-Kuo-spec slot construction
 
 **Search engines (final closure cycle):**
 - `togordoeldesheredado.cpp` — Engine 17 (4-seed cold-start cross-genealogy campaign; produced the 3095 alternative basin)
-- `togordoelsupergordoinfiel.cpp` — Engine 18 (Move P1 chained recovery + multi-init: 2 seeds JK_2008 init + 2 seeds random JK-valid init)
+- `togordoelsupergordoinfiel.cpp` — Engine 18 (Move P1 chained recovery + multi-init)
 
-Engines 13–16 from the early F₂ closure cycle are documented in `PAPER_TERMINAL.md` §217–§222 (the basin-saturation evidence under the COMBO genealogy). Their source code is not included as the final closure engines (17, 18) supersede them in arsenal, discipline, and methodology; readers wishing to replicate Engines 13–16 will find their full architectural specification in `PAPER_TERMINAL.md`.
+Engines 13–16 of the early F₂ cycle are fully specified architecturally in `PAPER_TERMINAL.md` §217–§222 (the basin-saturation evidence under the COMBO genealogy); their sources are omitted because the closure engines 17–18 supersede them in arsenal and discipline. The GF(q) field engines and their preserved record dumps are documented in the same paper, clearly marked as the closed, non-practitioner-relevant exploration described above.
 
 **Documents:**
 - `README.md` — this file
 - `MAIN_DISCOVERIES.md` — the four scientific contributions, concise and citable
-- `NEW_DISCOVERIES.md` — open journal for findings post project-closure (empty at release)
-- `PAPER_TERMINAL.md` — full project paper, lossless, ~3700 lines, every engine documented
+- `NEW_DISCOVERIES.md` — open journal for post-closure findings (empty at release)
+- `PAPER_TERMINAL.md` — full project paper, lossless, ~3700 lines, every engine documented including the GF(q) detour and the Genz refutation
 - `COJONES_SABIOS_TERMINAL.md` — operational arsenal: 12 Sobol-native levers with empirical-applicability annotations
-- `METHODOLOGY.md` — a short standalone primer on the methodology (D190 verify, D172 cache, probe §C, etc.) for readers who only want the methods, not the project history
+- `METHODOLOGY.md` — standalone methods primer (quadruple-verify, incremental cache, productivity probe)
 - `GUIDE_FOR_EVERYONE.md` — plain-language tour
 - `CITATION.cff` — machine-readable citation
 - `LICENSE` — MIT
 
 **Analytical reference data:**
-- `BOUND_COMPUTE_v1_log.txt` — analytical floors on the audit subspace (with caveat that the independence assumption is structurally false; see `MAIN_DISCOVERIES.md`)
+- `BOUND_COMPUTE_v1_log.txt` — analytical floors on the audit subspace (with the caveat — see `MAIN_DISCOVERIES.md` — that its cross-dimension independence assumption is structurally false, which is itself one of the project's findings)
 - `PISO_TEORICO_v1_log.txt` — absolute / real floor measurements
-- `RESULTADOS_FORENSIC.txt` — FORENSIC v1 structural priors (frozen slots, couplings, sextet `{21, 23, 31, 32, 33, 34}`)
+- `RESULTADOS_FORENSIC.txt` — FORENSIC v1 structural priors (frozen slots, couplings, the co-changing sextet)
 - `primitive_polynomials_deg8.md`, `primitive_polynomials_deg9.md` — primitive polynomial reference data
 
-**Engine campaign logs (raw text, reproducible):**
-- `togordo13_v2_log.txt`, `togordo14_log.txt`, `togordo15_log.txt`, `togordo16_log.txt` — F₂ early closure cycle (Engines 13–16, all closed with audit-Δ = 0 over the COMBO genealogy)
-- `togordo17_log.txt` — Engine 17 full campaign log (4 seeds, best seed 4 = 3095, ~33h M2)
-- *(Engine 18 log not included: the campaign was terminated mid-run by the Architect after seed 3 closure when the substantive findings — F86 basin diversity and Move P1 ornamental in F₂ — were already established; see `PAPER_TERMINAL.md` §226.2 for the closure rationale.)*
+**Engine campaign logs (raw, reproducible):**
+- `togordo13_v2_log.txt`, `togordo14_log.txt`, `togordo15_log.txt`, `togordo16_log.txt` — F₂ early cycle (Engines 13–16, all closed with audit-Δ = 0 over the COMBO genealogy — the saturation evidence)
+- `togordo17_log.txt` — Engine 17 full campaign (4 seeds, best = 3095, ~33 h M2)
+- *(Engine 18 log not included: the run was terminated mid-campaign by the Architect after seed-3 closure, once the substantive findings — F86 basin diversity, Move P1 ornamental in F₂ — were established. Rationale in `PAPER_TERMINAL.md` §226.2.)*
 
 ---
 
 ## What this repository is, and what it isn't
 
-**It is**: a complete, reproducible, byte-exact record of one of the rare improvements over the Joe-Kuo (2008) Sobol direction numbers on their own audit metric, together with the empirical evidence that the F₂ audit subspace is structured into multiple basins with distinct integration-error profiles — refuting an implicit assumption in QMC literature about the meaning of audit-metric optimisation.
+**It is**: a complete, reproducible record of one of the rare improvements over the Joe-Kuo (2008) Sobol direction numbers on their own audit metric, together with the empirical evidence that the F₂ audit subspace is structured into multiple basins with distinct integration-error profiles — refuting an implicit assumption in QMC literature about what audit-metric optimisation means. And it is the honest documentation of a weeks-long descent through higher fields that produced a beautiful, useless number, and the benchmark that proved it useless.
 
-**It is not**: a uniform replacement for Joe-Kuo (2008). The Genz benchmark in this repository makes the limits explicit: the project record beats Joe-Kuo on 7 of 18 Genz cells, not all of them. Honest practitioner advice is in `MAIN_DISCOVERIES.md` and `GUIDE_FOR_EVERYONE.md`.
+**It is not**: a uniform replacement for Joe-Kuo (2008). The Genz benchmark in this repository makes the limits explicit — the project record beats Joe-Kuo on 7 of 18 cells, not all of them. It is not a claim of formal peer-reviewed verification; it is honest about exactly how far its verifier goes. And the GF(q) field records are not practitioner-relevant, which the repository states wherever they appear rather than burying.
 
 ---
 
 ## Citation
-
-If this work is useful to you, please cite it:
 
 ```bibtex
 @misc{amichis2026estrella,
@@ -139,9 +168,11 @@ If this work is useful to you, please cite it:
   year         = {2026},
   month        = may,
   howpublished = {GitHub repository},
-  url          = {https://github.com/<your-username>/proyecto-estrella-sobol},
-  note         = {Records: COMBO\_3027 (audit 3027, -5.3\% vs JK\_2008);
-                  E17\_seed4\_3095 (audit 3095, Gaussian dim$\geq$20 specialist)}
+  url          = {https://github.com/tretoef-estrella/proyecto-estrella-sobol},
+  note         = {Record: COMBO\_3027 (audit 3027, -5.3\% vs JK\_2008);
+                  alternative basin E17\_seed4\_3095 (audit 3095, Gaussian dim$\geq$20);
+                  GF(q) field-record exploration documented and closed as
+                  non-practitioner-relevant per Genz benchmark}
 }
 ```
 
@@ -151,16 +182,18 @@ A machine-readable `CITATION.cff` is included.
 
 ## Acknowledgements
 
-- **Joe & Kuo (2008)** — original construction and reference direction numbers (`new-joe-kuo-6.21201`).
-- **Niederreiter (1987-1988), Owen (1995), Faure & Lemieux (2016)** — foundational work informing the Sobol-native operational arsenal documented in `COJONES_SABIOS_TERMINAL.md`.
-- **Anthropic / Claude** — AI collaboration in the Architect–Constructor–Auditor working pattern. The Architect (Rafa) arbitrated all decisions, set all hypotheses, and ran all M2 jobs. Claude instances served as Constructor (C++ engine code, scripts) and Auditor (forensic disenta against archives). Triple-role discipline documented in the paper.
+- **Joe & Kuo (2008)** — the original construction and reference direction numbers.
+- **Niederreiter (1987–1988), Owen (1995), Faure & Lemieux (2016)** — foundational work informing the Sobol-native arsenal in `COJONES_SABIOS_TERMINAL.md`.
+- **Anthropic / Claude** — AI collaboration in the Architect–Constructor–Auditor working pattern. The Architect (Rafa) arbitrated every decision, set every hypothesis, and ran every M2 job. Claude instances served as Constructor (C++ engines, scripts) and Auditor (forensic dissent against the archives). The triple-role discipline — including the retirements, the retractions, and the symmetric error-logging — is documented in the paper.
 
 ---
 
 ## Contact
 
-For questions, corrections, or to share results derived from this work, please open a GitHub issue. Substantive disagreements and reproducibility reports are particularly welcome.
- email: tretoef@gmail.com
+For questions, corrections, or to share results derived from this work, open a GitHub issue. Substantive disagreements and reproducibility reports are especially welcome.
+
+Email: tretoef@gmail.com
+
 ---
 
 *Madrid, May 2026 — Cojones rectos.*
