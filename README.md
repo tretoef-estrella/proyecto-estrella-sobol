@@ -170,6 +170,16 @@ Engines 13–16 of the early F₂ cycle are fully specified architecturally in `
 
 ---
 
+## A note on the names
+
+The engines carry deliberately absurd names in Castilian Spanish (`TOGORDOELGRANGRASIENTOESELREYQUEGANALENTO` — "the great greasy one is the king who wins slowly" — closed GF(32) at 547). This is not decoration. It is a working discipline with two distinct justifications.
+
+The first is human: *a ridiculous name is not allowed to survive a mediocre engine.* A name you would be embarrassed to put in a record forces the work under it to be good. The names are the author's signature, and when an engine set a record its name went into the record without apology.
+
+The second is a practitioner's hypothesis, stated honestly as such. Across nearly a thousand engines spanning every project of Proyecto Estrella, the author's consistent working observation is that engines given names with **strong, vivid semantics** — rather than neutral labels like `engine_v7` — were specified, debugged, and iterated more effectively in collaboration with the AI system that wrote them. The working explanation is that a semantically rich name engages parallel associative context in the model, sharpening how it reasons about the engine's purpose and failure modes. This is an empirical impression from extended practice, **not a measured A/B result** — no controlled comparison of neutral-named versus vivid-named engines on identical tasks was run. It is recorded here because it shaped the methodology and because, after a thousand engines, the author trusts the pattern enough to keep doing it. Read it as a hypothesis worth testing, not as an established claim.
+
+---
+
 ## Citation
 
 ```bibtex
